@@ -105,7 +105,6 @@ class GaussianMLPPolicy(StochasticPolicy):
     def get_param_values(self):
         return torch.nn.utils.parameters_to_vector(super().parameters())
 
-
     def set_param_values(self, given_parameters):
         torch.nn.utils.vector_to_parameters(given_parameters, super().parameters())
 
@@ -121,4 +120,14 @@ class GaussianMLPPolicy(StochasticPolicy):
             param.grad.zero_()
         return grads
 
-    
+    def log_likelihood(self, observation, action):
+        """Compute log likelihood given observations and action.
+        Args:
+            observation (torch.Tensor): Observation from the environment.
+            action (torch.Tensor): Predicted action.
+        Returns:
+            torch.Tensor: Calculated log likelihood value of the action given
+                observation
+        """
+        dist, _ = self.forward(observation)
+        return dist.log_prob(action)

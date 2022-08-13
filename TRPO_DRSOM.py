@@ -1,3 +1,5 @@
+from ctypes.wintypes import HGDIOBJ
+from email import policy
 from lib2to3.pygram import pattern_symbols
 from garage import log_performance
 from garage.np import discount_cumsum
@@ -48,8 +50,11 @@ class TRPO_DRSOM():
 
         self.policy = policy
         self._old_policy = copy.deepcopy(self.policy)
-        self._p_policy = copy.deepcopy(self.policy)
-        self._m_policy = copy.deepcopy(self.policy)
+        self._mix_policy = copy.deepcopy(self.policy)
+        self._pos_g_policy = copy.deepcopy(self.policy)
+        self._neg_g_policy = copy.deepcopy(self.policy)
+        self._pos_m_policy = copy.deepcopy(self.policy)
+        self._neg_m_policy = copy.deepcopy(self.policy)
         
 
     def train(self, trainer):
@@ -113,44 +118,86 @@ class TRPO_DRSOM():
 
     def _train(self, obs, actions, rewards, returns, advs, valids):
         for dataset in self._policy_optimizer.get_minibatch(obs, actions, rewards, advs):
-            self._train_policy(*dataset, valids)
+            self._train_policy_first(*dataset, valids)
         for dataset in self._vf_optimizer.get_minibatch(obs, returns):
             self._train_value_function(*dataset)
 
 
-    def _train_policy(self, obs, actions, rewards, advs, valids):
-
-        d_vector = self.policy.get_param_values() - self._old_policy.get_param_values()
-        grad = self.policy.get_grads()
-
-        p_policy_params = self.policy.get_param_values() + d_vector * self._epsilon 
-        m_policy_params = self.policy.get_param_values() + grad * self._epsilon
-
-        self._p_policy.set_param_values(p_policy_params)
-        self._m_policy.set_param_values(m_policy_params)
-
-        grad_p = self.get_gradinets(obs, actions, advs, valids, self._p_policy)
-        grad_m = self.get_gradinets(obs, actions, advs, valids, self._m_policy)
-
-        hessian_g = (grad_p - grad) / self._epsilon
-        hessian_m = (grad_m - grad) / self._epsilon
-
-        # compute Q and G_{k}
+    def _train_policy_first(self, obs, actions, rewards, advs, valids):
+        g_vector = self.get_gradinets(obs, actions, advs, valids, self.policy)
 
 
 
+    def _train_policy_second(self, obs, actions, rewards, advs, valids):
 
-    def get_gradinets(self, sub_obs, sub_actions, sub_advs, valids, policy):
-        loss= self._compact_objective(sub_obs, sub_actions, sub_advs, valids, policy)
+        self.generate_mix_policy()
+        g_mix = self.get_gradinets(obs, actions, advs, valids, self._mix_policy)
+        g_lh = self.get_gradinets(obs, actions, None, valids, self._mix_policy)
+
+        m_vector = self.policy.get_param_values() - self._old_policy.get_param_values()
+        g_vector = self.get_gradinets(obs, actions, advs, valids, self.policy)
+
+        # Here we treat the hessian of L function as the hessian of V function
+        # for the momentum part
+        pos_m_params = self._mix_policy.get_param_values() + m_vector * self._epsilon
+        neg_m_params = self._mix_policy.get_param_values() - m_vector * self._epsilon
+        self._pos_m_policy.set_param_values(pos_m_params)
+        self._neg_m_policy.set_param_values(neg_m_params)
+
+        # first component, for the momentum part
+        inner_product_m = torch.dot(g_lh, m_vector)
+        fst_m = inner_product_m * g_mix
+
+        # second component, for the momentum part
+        pos_m = self.get_gradinets(obs, actions, advs, valids, self._pos_m_policy)
+        neg_m = self.get_gradinets(obs, actions, advs, valids, self._neg_m_policy)
+        hm = (pos_m - neg_m) / (2 * self._epsilon)
+
+        # for the gradient part
+        pos_g_params = self._mix_policy.get_param_values() + g_vector * self._epsilon
+        neg_g_params = self._mix_policy.get_param_values() - g_vector * self._epsilon
+        self._pos_g_policy.set_param_values(pos_g_params)
+        self._neg_g_policy.set_param_values(neg_g_params)
+
+        # first component, for the gradient part
+        inner_product_g = torch.dot(g_lh, g_vector)
+        fst_g = inner_product_g * g_mix
+
+        # second component, for the gradient part
+        pos_g = self.get_gradinets(obs, actions, advs, valids, self._pos_g_policy)
+        neg_g = self.get_gradinets(obs, actions, advs, valids, self._neg_g_policy)
+        hg = (pos_g - neg_g) / (2 * self._epsilon)
+
+        # add respectively
+        hessian_m = fst_m + hm
+        hessian_g = fst_g + hg
+
+        # compute Q_{k}
+        # TBA.
+
+        # How to compute G_{k}
+        # TBA. 
+
+
+    def generate_mix_policy(self):
+        a = np.random.uniform(0.0, 1.0)
+        mix = a * self.policy.get_param_values() + (1 - a) * self._old_policy.get_param_values()
+        self._mix_policy.set_param_values(mix)
+
+    def get_gradinets(self, obs, actions, advs, valids, policy):
+        loss = self._compute_objective(obs, actions, advs, valids, policy)
         loss = loss.mean()
         loss.backward()
         grad = policy.get_grads()
         return grad 
 
-    def _compact_objective(self, obs, actions, advs, valids, policy):
-        pattern_symbols
-        
+    def _compute_objective(self, obs, actions, advs, valids, policy):
+        log_likelihoods = policy.log_likelihood(obs, actions)
 
+        if advs is None:
+            # TBA.
+            pass
+        else: 
 
     def _train_value_function(self, obs, returns):
         self._vf_optimizer.zero_grad()
