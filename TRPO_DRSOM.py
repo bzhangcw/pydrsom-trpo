@@ -1,6 +1,3 @@
-from ctypes.wintypes import HGDIOBJ
-from email import policy
-from lib2to3.pygram import pattern_symbols
 from garage import log_performance
 from garage.np import discount_cumsum
 from garage.np.optimizers import BatchDataset
