@@ -1,13 +1,13 @@
 """GaussianMLPPolicy."""
 import torch
 from torch import nn
+import numpy as np
 
+from garage.torch import as_torch
 from garage.torch.modules import GaussianMLPModule
 
-from policies.stochastic_policy import StochasticPolicy
 
-
-class GaussianMLPPolicy(StochasticPolicy):
+class GaussianMLPPolicy(torch.nn.Module):
     """MLP whose outputs are fed into a Normal distribution..
 
     A policy that contains a MLP to make prediction based on a gaussian
@@ -67,7 +67,12 @@ class GaussianMLPPolicy(StochasticPolicy):
                  std_parameterization='exp',
                  layer_normalization=False,
                  name='GaussianMLPPolicy'):
-        super().__init__(env_spec, name)
+        super().__init__()
+
+        self._name = name 
+        self._env_spec = env_spec
+        self._name = name
+
         self._obs_dim = env_spec.observation_space.flat_dim
         self._action_dim = env_spec.action_space.flat_dim
         self._module = GaussianMLPModule(
@@ -102,11 +107,34 @@ class GaussianMLPPolicy(StochasticPolicy):
         dist = self._module(observations)
         return dist, dict(mean=dist.mean, log_std=(dist.variance ** .5).log())
 
-    def get_param_values(self):
+    def get_param_value_new(self):
         return torch.nn.utils.parameters_to_vector(super().parameters())
 
-    def set_param_values(self, given_parameters):
+    def set_param_value_new(self, given_parameters):
         torch.nn.utils.vector_to_parameters(given_parameters, super().parameters())
+
+    def get_param_values(self):
+        """Get the parameters to the policy.
+
+        This method is included to ensure consistency with TF policies.
+
+        Returns:
+            dict: The parameters (in the form of the state dictionary).
+
+        """
+        return self.state_dict()
+
+    def set_param_values(self, state_dict):
+        """Set the parameters to the policy.
+
+        This method is included to ensure consistency with TF policies.
+
+        Args:
+            state_dict (dict): State dictionary.
+
+        """
+        self.load_state_dict(state_dict)
+
 
     def get_grads(self):
         grads = []
@@ -120,8 +148,61 @@ class GaussianMLPPolicy(StochasticPolicy):
             param.grad.zero_()
         return grads
 
-    def reset(self, do_resets=None):
-        return super().reset(do_resets)
-
     def get_action(self, observation):
-        return super().get_action(observation)
+        if not isinstance(observation, np.ndarray) and not isinstance(
+                observation, torch.Tensor):
+            observation = self._env_spec.observation_space.flatten(observation)
+        elif isinstance(observation,
+                        np.ndarray) and len(observation.shape) > 1:
+            observation = self._env_spec.observation_space.flatten(observation)
+        elif isinstance(observation,
+                        torch.Tensor) and len(observation.shape) > 1:
+            observation = torch.flatten(observation)
+        with torch.no_grad():
+            if not isinstance(observation, torch.Tensor):
+                observation = as_torch(observation)
+            observation = observation.unsqueeze(0)
+            action, agent_infos = self.get_actions(observation)
+            return action[0], {k: v[0] for k, v in agent_infos.items()}
+
+    def get_actions(self, observations):
+        if not isinstance(observations[0], np.ndarray) and not isinstance(
+                observations[0], torch.Tensor):
+            observations = self._env_spec.observation_space.flatten_n(
+                observations)
+
+        # frequently users like to pass lists of torch tensors or lists of
+        # numpy arrays. This handles those conversions.
+        if isinstance(observations, list):
+            if isinstance(observations[0], np.ndarray):
+                observations = np.stack(observations)
+            elif isinstance(observations[0], torch.Tensor):
+                observations = torch.stack(observations)
+
+        if isinstance(observations[0],
+                      np.ndarray) and len(observations[0].shape) > 1:
+            observations = self._env_spec.observation_space.flatten_n(
+                observations)
+        elif isinstance(observations[0],
+                        torch.Tensor) and len(observations[0].shape) > 1:
+            observations = torch.flatten(observations, start_dim=1)
+        with torch.no_grad():
+            if not isinstance(observations, torch.Tensor):
+                observations = as_torch(observations)
+            dist, info = self.forward(observations)
+            return dist.sample().cpu().numpy(), {
+                k: v.detach().cpu().numpy()
+                for (k, v) in info.items()
+            }
+
+    def reset(self):
+        pass
+
+    def observation_space(self):
+        return self._env_spec.observation_space
+
+    def action_space(self):
+        return self._env_spec.action_space
+
+    def name(self):
+        return self._name
