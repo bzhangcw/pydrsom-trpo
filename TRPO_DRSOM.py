@@ -54,6 +54,8 @@ class TRPO_DRSOM(RLAlgorithm):
 
         self.policy = policy
         self._old_policy = copy.deepcopy(self.policy)
+        self._old_policy_m = copy.deepcopy(self.policy)
+
         self._mix_policy = copy.deepcopy(self.policy)
         self._pos_g_policy = copy.deepcopy(self.policy)
         self._neg_g_policy = copy.deepcopy(self.policy)
@@ -129,7 +131,7 @@ class TRPO_DRSOM(RLAlgorithm):
         """
 
         g_vector, loss = self.get_gradients(obs, actions, advs, valids, self.policy)
-        m_vector = self.policy.get_param_value_new() - self._old_policy.get_param_value_new()
+        m_vector = self.policy.get_param_value_new() - self._old_policy_m.get_param_value_new()
 
         alpha = self._policy_optimizer.compute_alpha(g_vector=g_vector, m_vector=m_vector,
                                                      f_constraint=lambda: self._compute_kl_constraint(obs))
@@ -165,6 +167,8 @@ class TRPO_DRSOM(RLAlgorithm):
 
         print(alpha)
         params_new = alpha[0] * g_vector + alpha[1] * m_vector.detach()
+
+        self._old_policy_m.load_state_dict(self.policy.state_dict())
 
         self.policy.set_param_value_new(params_new)
         #

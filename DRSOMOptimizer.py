@@ -91,12 +91,23 @@ class DRSOMOptimizer(Optimizer):
         gg = torch.dot(g_vector, g_vector)
         mg = torch.dot(m_vector, g_vector)
 
-        G = torch.tensor([[gFg, mFg+1e-8], [mFg+1e-8, mFm + 1e-8]], requires_grad=False)
+        per = 0
+
+        print(m_vector.shape)
+
+        a = m_vector.shape[0]
+
+        tmp = torch.zeros(a)
+
+        if torch.equal(tmp, m_vector):
+            per = 1e-8
+
+        G = torch.tensor([[gFg, mFg+per], [mFg+per, mFm + per]], requires_grad=False)
         c = torch.tensor([gg, mg], requires_grad=False)
 
         coff = 1. / (G[0][0] * G[1][1] - G[0][1] * G[1][0])
 
-        inverse = coff * torch.tensor([[mFm+1e-8, (-1) * mFg + 1e-8], [(-1) * mFg +1e-8, gFg]], requires_grad=False)
+        inverse = coff * torch.tensor([[mFm+per, (-1) * mFg + per], [(-1) * mFg + per, gFg]], requires_grad=False)
 
         x = inverse @ c
 
