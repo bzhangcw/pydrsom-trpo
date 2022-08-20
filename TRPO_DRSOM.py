@@ -36,7 +36,7 @@ class TRPO_DRSOM(RLAlgorithm):
         if policy_optimizer:
             self._policy_optimizer = policy_optimizer
         else:
-            self._policy_optimizer = OptimizerWrapper((DRSOMOptimizer, dict(max_constraint_value=0.01)), policy)
+            self._policy_optimizer = OptimizerWrapper((DRSOMOptimizer, dict(max_constraint_value=0.001)), policy)
 
         self._max_episode_length = env_spec.max_episode_length
         self._env_spec = env_spec
@@ -48,12 +48,10 @@ class TRPO_DRSOM(RLAlgorithm):
         self._center_adv = center_adv
         self._positive_adv = positive_adv
         self._epsilon = 1e-8
-        self._cg_iters = 10
-        self._radius = 0.01
         self._gae_lambda = gae_lambda
 
         self.policy = policy
-        self._old_policy = copy.deepcopy(self.policy)
+        # self._old_policy = copy.deepcopy(self.policy)
         self._old_policy_m = copy.deepcopy(self.policy)
 
         self._mix_policy = copy.deepcopy(self.policy)
@@ -92,9 +90,11 @@ class TRPO_DRSOM(RLAlgorithm):
         advs_flat = self._compute_advantage(rewards, valids, baselines)
 
         self._train(obs_flat, actions_flat, rewards_flat, returns_flat,
-                    advs_flat, valids)
+                    advs_flat, valids, itr)
 
-        self._old_policy.load_state_dict(self.policy.state_dict())
+        print(itr)
+
+        # self._old_policy.load_state_dict(self.policy.state_dict())
 
         undiscounted_returns = log_performance(itr,
                                                eps,
@@ -117,58 +117,40 @@ class TRPO_DRSOM(RLAlgorithm):
 
         return advantage_flat
 
-    def _train(self, obs, actions, rewards, returns, advs, valids):
+    def _train(self, obs, actions, rewards, returns, advs, valids, itr):
         for dataset in self._policy_optimizer.get_minibatch(obs, actions, rewards, advs):
-            self._train_policy_first_order(*dataset, valids)
+            self._train_policy_first_order(*dataset, valids, itr)
         for dataset in self._vf_optimizer.get_minibatch(obs, returns):
             self._train_value_function(*dataset)
 
-    def _train_policy_first_order(self, obs, actions, rewards, advs, valids):
+    def _train_policy_first_order(self, obs, actions, rewards, advs, valids, itr):
         """
         max g_{old}^{T} (theta - theta_{old})
         s.t. 1/2 (theta - theta_{old})^{T} F_{old} (theta - theta_{old}) <= delta
 
         """
 
-        g_vector, loss = self.get_gradients(obs, actions, advs, valids, self.policy)
-        m_vector = self.policy.get_param_value_new() - self._old_policy_m.get_param_value_new()
+        loss, g_vector = self.get_gradients(obs, actions, advs, valids, self.policy)
+        
+        old = self._old_policy_m.get_param_value_new()
+        now = self.policy.get_param_value_new()
 
-        alpha = self._policy_optimizer.compute_alpha(g_vector=g_vector, m_vector=m_vector,
-                                                     f_constraint=lambda: self._compute_kl_constraint(obs))
 
-        # f_constraint = self._compute_kl_constraint(obs)
+        m_vector = now - old
 
-        # parameters = self.policy.get_param_value_new()
-        #
-        # KL = self._compute_kl_constraint(obs)
-        # d_kl = flat_grad(KL, parameters, create_graph=True)
-        # FVP = KL_HVP(d_kl, parameters)
-        # m_vector = self.policy.get_param_value_new() - self._old_policy.get_param_value_new()
-        #
-        # Fg = FVP(g_vector)
-        # Fm = FVP(m_vector)
-        #
-        # gFg = torch.dot(g_vector, Fg)
-        # mFm = torch.dot(m_vector, Fm)
-        # mFg = torch.dot(m_vector, Fg)
-        #
-        # gg = torch.dot(g_vector, g_vector)
-        # mg = torch.dot(m_vector, g_vector)
-        #
-        # G = torch.tensor([[gFg, mFg], [mFg, mFm]], requires_grad=False)
-        # c = torch.tensor([gg, mg], requires_grad=False)
-        #
-        # x = _conjugate_gradient(FVP, G, c, self._cg_iters)
-        #
-        # Gx = torch.dot(G, x)
-        #
-        # alpha = np.sqrt(2 * self._radius * (1. / (torch.dot(x, Gx) + 1e-8))) * x
-        #
+        alpha = self._policy_optimizer.compute_alpha(g_vector = g_vector, m_vector=m_vector,
+                                                     f_constraint=lambda: self._compute_kl_constraint(obs), itr=itr)
 
+        
+
+
+        print("alpha is: \n")
         print(alpha)
-        params_new = alpha[0] * g_vector + alpha[1] * m_vector.detach()
 
-        self._old_policy_m.load_state_dict(self.policy.state_dict())
+
+        params_new = now + alpha[0] * g_vector + alpha[1] * m_vector.detach()
+
+        self._old_policy_m.set_param_value_new(now)
 
         self.policy.set_param_value_new(params_new)
         #
@@ -176,7 +158,7 @@ class TRPO_DRSOM(RLAlgorithm):
 
     def _compute_kl_constraint(self, obs):
         with torch.no_grad():
-            old_dist = self._old_policy(obs)[0]
+            old_dist = self._old_policy_m(obs)[0]
 
         new_dist = self.policy(obs)[0]
 
@@ -189,12 +171,12 @@ class TRPO_DRSOM(RLAlgorithm):
         loss = loss.mean()
         loss.backward()
         grad = policy.get_grads()
-        return grad, loss
+        return loss, grad
 
     def _compute_objective(self, obs, actions, advs, valids, policy):
 
         with torch.no_grad():
-            old_loglikelihood = self._old_policy(obs)[0].log_prob(actions)
+            old_loglikelihood = self._old_policy_m(obs)[0].log_prob(actions)
 
         new_loglikelihood = self.policy(obs)[0].log_prob(actions)
         likelihood_ratio = (new_loglikelihood - old_loglikelihood).exp()

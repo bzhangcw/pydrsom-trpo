@@ -1,3 +1,4 @@
+from cmath import isnan
 import warnings
 
 from dowel import logger
@@ -70,7 +71,7 @@ class DRSOMOptimizer(Optimizer):
         self._hvp_reg_coeff = hvp_reg_coeff
         self._max_constraint_value = max_constraint_value
 
-    def compute_alpha(self, g_vector, m_vector, f_constraint):
+    def compute_alpha(self, g_vector, m_vector, f_constraint, itr):
         params = []
         for group in self.param_groups:
             for p in group['params']:
@@ -88,12 +89,13 @@ class DRSOMOptimizer(Optimizer):
         mFm = torch.dot(m_vector, Fm)
         mFg = torch.dot(m_vector, Fg)
 
+        print("gFg is:")
+        print(gFg)
+
         gg = torch.dot(g_vector, g_vector)
         mg = torch.dot(m_vector, g_vector)
 
         per = 0
-
-        print(m_vector.shape)
 
         a = m_vector.shape[0]
 
@@ -102,17 +104,27 @@ class DRSOMOptimizer(Optimizer):
         if torch.equal(tmp, m_vector):
             per = 1e-8
 
-        G = torch.tensor([[gFg, mFg+per], [mFg+per, mFm + per]], requires_grad=False)
+        G = torch.tensor([[gFg, mFg + per], [mFg + per, mFm + per]], requires_grad=False)
+
+        print("G is:")
+        print(G)
+
         c = torch.tensor([gg, mg], requires_grad=False)
 
         coff = 1. / (G[0][0] * G[1][1] - G[0][1] * G[1][0])
 
-        inverse = coff * torch.tensor([[mFm+per, (-1) * mFg + per], [(-1) * mFg + per, gFg]], requires_grad=False)
+        inverse = coff * torch.tensor([[mFm+per, (-1) * (mFg + per)], [(-1) * (mFg + per), gFg]], requires_grad=False)
 
         x = inverse @ c
 
+        print("x is:")
+        print(x)
 
+       
         alpha = np.sqrt(2 * self._max_constraint_value * (1. / (torch.dot(x, G @ x) + 1e-8))) * x
+
+        if torch.isnan(alpha).sum():
+            alpha = torch.ones(2)
 
 
         return alpha
