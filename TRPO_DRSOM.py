@@ -28,6 +28,13 @@ class TRPO_DRSOM(RLAlgorithm):
                  center_adv=True,
                  positive_adv=False):
 
+        self._max_constraint_value = 0.01
+        self._rho = 0.1
+        self._eta = 0.8
+        self._beta_1 = 0.8
+        self._beta_2 = 1.2
+        self._radius = self._max_constraint_value
+
         if vf_optimizer:
             self._vf_optimizer = vf_optimizer
         else:
@@ -36,7 +43,7 @@ class TRPO_DRSOM(RLAlgorithm):
         if policy_optimizer:
             self._policy_optimizer = policy_optimizer
         else:
-            self._policy_optimizer = OptimizerWrapper((DRSOMOptimizer, dict(max_constraint_value=0.001)), policy)
+            self._policy_optimizer = OptimizerWrapper((DRSOMOptimizer, dict(max_constraint_value=self._max_constraint_value)), policy)
 
         self._max_episode_length = env_spec.max_episode_length
         self._env_spec = env_spec
@@ -94,7 +101,7 @@ class TRPO_DRSOM(RLAlgorithm):
 
         print(itr)
 
-        # self._old_policy.load_state_dict(self.policy.state_dict())
+        self._old_policy_m.load_state_dict(self.policy.state_dict())
 
         undiscounted_returns = log_performance(itr,
                                                eps,
@@ -129,31 +136,65 @@ class TRPO_DRSOM(RLAlgorithm):
         s.t. 1/2 (theta - theta_{old})^{T} F_{old} (theta - theta_{old}) <= delta
 
         """
+        self._policy_optimizer.zero_grad()
+        loss = self.get_gradients(obs, actions, advs, valids, self.policy)
+        loss.backward()
 
-        loss, g_vector = self.get_gradients(obs, actions, advs, valids, self.policy)
+        # g_vector = g_vector / torch.norm(g_vector) # normalize the gradient direction
         
-        old = self._old_policy_m.get_param_value_new()
+        # old = self._old_policy_m.get_param_value_new()
+        
         now = self.policy.get_param_value_new()
 
 
-        m_vector = now - old
+        # m_vector = (now - old).detach()
 
-        alpha = self._policy_optimizer.compute_alpha(g_vector = g_vector, m_vector=m_vector,
-                                                     f_constraint=lambda: self._compute_kl_constraint(obs), itr=itr)
+        # alpha, g_vector, m_vector = self._policy_optimizer.compute_alpha(f_constraint=lambda: self._compute_kl_constraint(obs), itr = itr, radius = self._radius)
 
-        
-
-
-        print("alpha is: \n")
-        print(alpha)
+        self._policy_optimizer.compute_alpha(f_loss=lambda: self._compute_objective(obs, actions, advs), f_constraint=lambda: self._compute_kl_constraint(obs), itr = itr, radius = self._radius)
 
 
-        params_new = now + alpha[0] * g_vector + alpha[1] * m_vector.detach()
+        # print("alpha is:")
+        # print(alpha)
 
-        self._old_policy_m.set_param_value_new(now)
+        # direction = alpha[0] * g_vector + alpha[1] * m_vector
+        # print('direction is: ')
+        # print(direction)
+        # params_new = now + direction
 
-        self.policy.set_param_value_new(params_new)
-        #
+        # pre_obj = self._compute_objective(obs, actions, advs, valids, self.policy)
+        # print('pre obj is:')
+        # print(pre_obj)
+
+        # self.policy.set_param_value_new(params_new)
+
+        # now_obj = self._compute_objective(obs, actions, advs, valids, self.policy)
+        # print('now obj is:')
+        # print(now_obj)
+
+        # linear_delta = torch.dot(g_vector, direction)
+        # print("linear delta is:")
+        # print(linear_delta)
+
+        # obj_increase = (now_obj.mean() - pre_obj.mean()).detach()
+        # print("obj increase is:")
+        # print(obj_increase)
+
+        # if linear_delta / obj_increase > self._eta :
+        #     self._radius =  self._radius
+        # elif linear_delta / obj_increase < self._rho :
+        #     self._radius =  self._radius
+            
+
+
+        # print("radius is: ")
+        # print(self._radius)  
+
+        # self._old_policy_m.set_param_value_new(now)
+
+        # print('params new is:')
+        # print(params_new)
+
         return loss
 
     def _compute_kl_constraint(self, obs):
@@ -167,13 +208,12 @@ class TRPO_DRSOM(RLAlgorithm):
         return kl_constraint.mean()
 
     def get_gradients(self, obs, actions, advs, valids, policy):
-        loss = self._compute_objective(obs, actions, advs, valids, policy)
+        loss = self._compute_objective(obs, actions, advs)
         loss = loss.mean()
-        loss.backward()
-        grad = policy.get_grads()
-        return loss, grad
+        # grad = policy.get_grads()
+        return loss
 
-    def _compute_objective(self, obs, actions, advs, valids, policy):
+    def _compute_objective(self, obs, actions, advs):
 
         with torch.no_grad():
             old_loglikelihood = self._old_policy_m(obs)[0].log_prob(actions)
