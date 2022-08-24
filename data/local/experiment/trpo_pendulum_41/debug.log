@@ -1,0 +1,2402 @@
+2022-08-24 10:11:04 | [trpo_pendulum] Logging to d:\Github\DRSOM-for-RL\data/local/experiment/trpo_pendulum_41
+2022-08-24 10:11:04 | [trpo_pendulum] Obtaining samples...
+2022-08-24 10:11:05 | [trpo_pendulum] epoch #0 | Saving snapshot...
+2022-08-24 10:11:05 | [trpo_pendulum] epoch #0 | Saved
+2022-08-24 10:11:05 | [trpo_pendulum] epoch #0 | Time 0.55 s
+2022-08-24 10:11:05 | [trpo_pendulum] epoch #0 | EpochTime 0.55 s
+-----------------------------------  --------------
+Evaluation/AverageDiscountedReturn    -10.3502
+Evaluation/AverageReturn              -96.0921
+Evaluation/Iteration                    0
+Evaluation/MaxReturn                  -92.4895
+Evaluation/MinReturn                  -99.6948
+Evaluation/NumEpisodes                  2
+Evaluation/StdReturn                    3.60265
+Evaluation/TerminationRate              0
+GaussianMLPPolicy/Entropy               1.41994
+GaussianMLPPolicy/KL                    0.000822561
+GaussianMLPPolicy/KLBefore              0
+GaussianMLPPolicy/LossAfter           -12.2425
+GaussianMLPPolicy/LossBefore          -12.2239
+GaussianMLPPolicy/dLoss                 0.0186205
+GaussianMLPValueFunction/LossAfter     40.6104
+GaussianMLPValueFunction/LossBefore    41.0757
+GaussianMLPValueFunction/dLoss          0.46534
+TotalEnvSteps                        1998
+-----------------------------------  --------------
+2022-08-24 10:11:06 | [trpo_pendulum] epoch #1 | Saving snapshot...
+2022-08-24 10:11:06 | [trpo_pendulum] epoch #1 | Saved
+2022-08-24 10:11:06 | [trpo_pendulum] epoch #1 | Time 1.31 s
+2022-08-24 10:11:06 | [trpo_pendulum] epoch #1 | EpochTime 0.76 s
+-----------------------------------  --------------
+Evaluation/AverageDiscountedReturn     -9.62744
+Evaluation/AverageReturn              -99.1107
+Evaluation/Iteration                    1
+Evaluation/MaxReturn                  -92.7108
+Evaluation/MinReturn                 -105.511
+Evaluation/NumEpisodes                  2
+Evaluation/StdReturn                    6.39988
+Evaluation/TerminationRate              0
+GaussianMLPPolicy/Entropy               1.41983
+GaussianMLPPolicy/KL                    0.000592431
+GaussianMLPPolicy/KLBefore              0
+GaussianMLPPolicy/LossAfter           -12.8247
+GaussianMLPPolicy/LossBefore          -12.817
+GaussianMLPPolicy/dLoss                 0.00774765
+GaussianMLPValueFunction/LossAfter     43.2931
+GaussianMLPValueFunction/LossBefore    43.7816
+GaussianMLPValueFunction/dLoss          0.488464
+TotalEnvSteps                        3996
+-----------------------------------  --------------
+2022-08-24 10:11:06 | [trpo_pendulum] epoch #2 | Saving snapshot...
+2022-08-24 10:11:06 | [trpo_pendulum] epoch #2 | Saved
+2022-08-24 10:11:06 | [trpo_pendulum] epoch #2 | Time 1.99 s
+2022-08-24 10:11:06 | [trpo_pendulum] epoch #2 | EpochTime 0.68 s
+-----------------------------------  -------------
+Evaluation/AverageDiscountedReturn     -9.76467
+Evaluation/AverageReturn              -99.851
+Evaluation/Iteration                    2
+Evaluation/MaxReturn                  -97.2891
+Evaluation/MinReturn                 -102.413
+Evaluation/NumEpisodes                  2
+Evaluation/StdReturn                    2.56187
+Evaluation/TerminationRate              0
+GaussianMLPPolicy/Entropy               1.41932
+GaussianMLPPolicy/KL                    0.00066555
+GaussianMLPPolicy/KLBefore              0
+GaussianMLPPolicy/LossAfter           -12.8702
+GaussianMLPPolicy/LossBefore          -12.8572
+GaussianMLPPolicy/dLoss                 0.0129766
+GaussianMLPValueFunction/LossAfter     43.1312
+GaussianMLPValueFunction/LossBefore    43.6181
+GaussianMLPValueFunction/dLoss          0.486961
+TotalEnvSteps                        5994
+-----------------------------------  -------------
+2022-08-24 10:11:07 | [trpo_pendulum] epoch #3 | Saving snapshot...
+2022-08-24 10:11:07 | [trpo_pendulum] epoch #3 | Saved
+2022-08-24 10:11:07 | [trpo_pendulum] epoch #3 | Time 2.64 s
+2022-08-24 10:11:07 | [trpo_pendulum] epoch #3 | EpochTime 0.64 s
+-----------------------------------  --------------
+Evaluation/AverageDiscountedReturn     -9.26305
+Evaluation/AverageReturn             -101.586
+Evaluation/Iteration                    3
+Evaluation/MaxReturn                 -101.135
+Evaluation/MinReturn                 -102.038
+Evaluation/NumEpisodes                  2
+Evaluation/StdReturn                    0.45121
+Evaluation/TerminationRate              0
+GaussianMLPPolicy/Entropy               1.41861
+GaussianMLPPolicy/KL                    0.000378461
+GaussianMLPPolicy/KLBefore              0
+GaussianMLPPolicy/LossAfter           -13.1535
+GaussianMLPPolicy/LossBefore          -13.151
+GaussianMLPPolicy/dLoss                 0.0025034
+GaussianMLPValueFunction/LossAfter     44.5468
+GaussianMLPValueFunction/LossBefore    45.0441
+GaussianMLPValueFunction/dLoss          0.49733
+TotalEnvSteps                        7992
+-----------------------------------  --------------
+2022-08-24 10:11:07 | [trpo_pendulum] epoch #4 | Saving snapshot...
+2022-08-24 10:11:07 | [trpo_pendulum] epoch #4 | Saved
+2022-08-24 10:11:07 | [trpo_pendulum] epoch #4 | Time 3.20 s
+2022-08-24 10:11:07 | [trpo_pendulum] epoch #4 | EpochTime 0.56 s
+-----------------------------------  --------------
+Evaluation/AverageDiscountedReturn    -10.4877
+Evaluation/AverageReturn             -103.503
+Evaluation/Iteration                    4
+Evaluation/MaxReturn                  -95.5781
+Evaluation/MinReturn                 -111.427
+Evaluation/NumEpisodes                  2
+Evaluation/StdReturn                    7.92465
+Evaluation/TerminationRate              0
+GaussianMLPPolicy/Entropy               1.41783
+GaussianMLPPolicy/KL                    7.24825e-07
+GaussianMLPPolicy/KLBefore              0
+GaussianMLPPolicy/LossAfter           -13.3041
+GaussianMLPPolicy/LossBefore          -13.3039
+GaussianMLPPolicy/dLoss                 0.000250816
+GaussianMLPValueFunction/LossAfter     45.3582
+GaussianMLPValueFunction/LossBefore    45.8652
+GaussianMLPValueFunction/dLoss          0.507008
+TotalEnvSteps                        9990
+-----------------------------------  --------------
+2022-08-24 10:11:08 | [trpo_pendulum] epoch #5 | Saving snapshot...
+2022-08-24 10:11:08 | [trpo_pendulum] epoch #5 | Saved
+2022-08-24 10:11:08 | [trpo_pendulum] epoch #5 | Time 3.74 s
+2022-08-24 10:11:08 | [trpo_pendulum] epoch #5 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.6936
+Evaluation/AverageReturn              -102.978
+Evaluation/Iteration                     5
+Evaluation/MaxReturn                  -101.204
+Evaluation/MinReturn                  -104.751
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     1.7731
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.41697
+GaussianMLPPolicy/KL                     4.78014e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -13.0869
+GaussianMLPPolicy/LossBefore           -13.0862
+GaussianMLPPolicy/dLoss                  0.000641823
+GaussianMLPValueFunction/LossAfter      43.6488
+GaussianMLPValueFunction/LossBefore     44.143
+GaussianMLPValueFunction/dLoss           0.494186
+TotalEnvSteps                        11988
+-----------------------------------  ---------------
+2022-08-24 10:11:09 | [trpo_pendulum] epoch #6 | Saving snapshot...
+2022-08-24 10:11:09 | [trpo_pendulum] epoch #6 | Saved
+2022-08-24 10:11:09 | [trpo_pendulum] epoch #6 | Time 4.29 s
+2022-08-24 10:11:09 | [trpo_pendulum] epoch #6 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -11.5164
+Evaluation/AverageReturn              -100.364
+Evaluation/Iteration                     6
+Evaluation/MaxReturn                   -99.4765
+Evaluation/MinReturn                  -101.252
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.887556
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.4161
+GaussianMLPPolicy/KL                     5.75864e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -12.4525
+GaussianMLPPolicy/LossBefore           -12.4514
+GaussianMLPPolicy/dLoss                  0.00108814
+GaussianMLPValueFunction/LossAfter      40.0789
+GaussianMLPValueFunction/LossBefore     40.5435
+GaussianMLPValueFunction/dLoss           0.464584
+TotalEnvSteps                        13986
+-----------------------------------  ---------------
+2022-08-24 10:11:09 | [trpo_pendulum] epoch #7 | Saving snapshot...
+2022-08-24 10:11:09 | [trpo_pendulum] epoch #7 | Saved
+2022-08-24 10:11:09 | [trpo_pendulum] epoch #7 | Time 4.83 s
+2022-08-24 10:11:09 | [trpo_pendulum] epoch #7 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -11.3315
+Evaluation/AverageReturn              -106.474
+Evaluation/Iteration                     7
+Evaluation/MaxReturn                  -103.343
+Evaluation/MinReturn                  -109.604
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.1307
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.41521
+GaussianMLPPolicy/KL                     2.83933e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -13.5878
+GaussianMLPPolicy/LossBefore           -13.5858
+GaussianMLPPolicy/dLoss                  0.00203419
+GaussianMLPValueFunction/LossAfter      45.7439
+GaussianMLPValueFunction/LossBefore     46.2397
+GaussianMLPValueFunction/dLoss           0.495777
+TotalEnvSteps                        15984
+-----------------------------------  ---------------
+2022-08-24 10:11:10 | [trpo_pendulum] epoch #8 | Saving snapshot...
+2022-08-24 10:11:10 | [trpo_pendulum] epoch #8 | Saved
+2022-08-24 10:11:10 | [trpo_pendulum] epoch #8 | Time 5.37 s
+2022-08-24 10:11:10 | [trpo_pendulum] epoch #8 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.93934
+Evaluation/AverageReturn              -100.821
+Evaluation/Iteration                     8
+Evaluation/MaxReturn                   -96.8314
+Evaluation/MinReturn                  -104.81
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.98953
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.41435
+GaussianMLPPolicy/KL                     1.27908e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -12.599
+GaussianMLPPolicy/LossBefore           -12.5989
+GaussianMLPPolicy/dLoss                  3.8147e-05
+GaussianMLPValueFunction/LossAfter      41.0633
+GaussianMLPValueFunction/LossBefore     41.5214
+GaussianMLPValueFunction/dLoss           0.458035
+TotalEnvSteps                        17982
+-----------------------------------  ---------------
+2022-08-24 10:11:10 | [trpo_pendulum] epoch #9 | Saving snapshot...
+2022-08-24 10:11:10 | [trpo_pendulum] epoch #9 | Saved
+2022-08-24 10:11:10 | [trpo_pendulum] epoch #9 | Time 5.91 s
+2022-08-24 10:11:10 | [trpo_pendulum] epoch #9 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.52735
+Evaluation/AverageReturn               -99.1363
+Evaluation/Iteration                     9
+Evaluation/MaxReturn                   -96.9308
+Evaluation/MinReturn                  -101.342
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     2.20553
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.41354
+GaussianMLPPolicy/KL                     3.77457e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -12.2503
+GaussianMLPPolicy/LossBefore           -12.2488
+GaussianMLPPolicy/dLoss                  0.00144386
+GaussianMLPValueFunction/LossAfter      39.1536
+GaussianMLPValueFunction/LossBefore     39.6076
+GaussianMLPValueFunction/dLoss           0.453953
+TotalEnvSteps                        19980
+-----------------------------------  ---------------
+2022-08-24 10:11:11 | [trpo_pendulum] epoch #10 | Saving snapshot...
+2022-08-24 10:11:11 | [trpo_pendulum] epoch #10 | Saved
+2022-08-24 10:11:11 | [trpo_pendulum] epoch #10 | Time 6.45 s
+2022-08-24 10:11:11 | [trpo_pendulum] epoch #10 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.47081
+Evaluation/AverageReturn               -97.8966
+Evaluation/Iteration                    10
+Evaluation/MaxReturn                   -94.1883
+Evaluation/MinReturn                  -101.605
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.70832
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.41288
+GaussianMLPPolicy/KL                     1.09601e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.9037
+GaussianMLPPolicy/LossBefore           -11.9041
+GaussianMLPPolicy/dLoss                 -0.000385284
+GaussianMLPValueFunction/LossAfter      37.2543
+GaussianMLPValueFunction/LossBefore     37.6975
+GaussianMLPValueFunction/dLoss           0.443153
+TotalEnvSteps                        21978
+-----------------------------------  ---------------
+2022-08-24 10:11:11 | [trpo_pendulum] epoch #11 | Saving snapshot...
+2022-08-24 10:11:11 | [trpo_pendulum] epoch #11 | Saved
+2022-08-24 10:11:11 | [trpo_pendulum] epoch #11 | Time 6.98 s
+2022-08-24 10:11:11 | [trpo_pendulum] epoch #11 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.70713
+Evaluation/AverageReturn              -104.906
+Evaluation/Iteration                    11
+Evaluation/MaxReturn                  -100.705
+Evaluation/MinReturn                  -109.107
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     4.20132
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.41212
+GaussianMLPPolicy/KL                     1.64578e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -13.1765
+GaussianMLPPolicy/LossBefore           -13.1761
+GaussianMLPPolicy/dLoss                  0.000401497
+GaussianMLPValueFunction/LossAfter      43.5006
+GaussianMLPValueFunction/LossBefore     43.9832
+GaussianMLPValueFunction/dLoss           0.482571
+TotalEnvSteps                        23976
+-----------------------------------  ---------------
+2022-08-24 10:11:12 | [trpo_pendulum] epoch #12 | Saving snapshot...
+2022-08-24 10:11:12 | [trpo_pendulum] epoch #12 | Saved
+2022-08-24 10:11:12 | [trpo_pendulum] epoch #12 | Time 7.53 s
+2022-08-24 10:11:12 | [trpo_pendulum] epoch #12 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -11.4766
+Evaluation/AverageReturn              -108.83
+Evaluation/Iteration                    12
+Evaluation/MaxReturn                  -106.628
+Evaluation/MinReturn                  -111.032
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     2.20176
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.41129
+GaussianMLPPolicy/KL                     1.69764e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -13.5709
+GaussianMLPPolicy/LossBefore           -13.5688
+GaussianMLPPolicy/dLoss                  0.00205326
+GaussianMLPValueFunction/LossAfter      44.6951
+GaussianMLPValueFunction/LossBefore     45.1911
+GaussianMLPValueFunction/dLoss           0.495918
+TotalEnvSteps                        25974
+-----------------------------------  ---------------
+2022-08-24 10:11:12 | [trpo_pendulum] epoch #13 | Saving snapshot...
+2022-08-24 10:11:12 | [trpo_pendulum] epoch #13 | Saved
+2022-08-24 10:11:12 | [trpo_pendulum] epoch #13 | Time 8.07 s
+2022-08-24 10:11:12 | [trpo_pendulum] epoch #13 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.48041
+Evaluation/AverageReturn               -91.1474
+Evaluation/Iteration                    13
+Evaluation/MaxReturn                   -88.2404
+Evaluation/MinReturn                   -94.0545
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     2.90706
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.41071
+GaussianMLPPolicy/KL                     5.51359e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.5613
+GaussianMLPPolicy/LossBefore           -10.5617
+GaussianMLPPolicy/dLoss                 -0.000411034
+GaussianMLPValueFunction/LossAfter      30.9601
+GaussianMLPValueFunction/LossBefore     31.3544
+GaussianMLPValueFunction/dLoss           0.39422
+TotalEnvSteps                        27972
+-----------------------------------  ---------------
+2022-08-24 10:11:13 | [trpo_pendulum] epoch #14 | Saving snapshot...
+2022-08-24 10:11:13 | [trpo_pendulum] epoch #14 | Saved
+2022-08-24 10:11:13 | [trpo_pendulum] epoch #14 | Time 8.61 s
+2022-08-24 10:11:13 | [trpo_pendulum] epoch #14 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.94516
+Evaluation/AverageReturn               -92.2963
+Evaluation/Iteration                    14
+Evaluation/MaxReturn                   -91.4765
+Evaluation/MinReturn                   -93.1162
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.819871
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.4103
+GaussianMLPPolicy/KL                     1.5226e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.7738
+GaussianMLPPolicy/LossBefore           -10.7734
+GaussianMLPPolicy/dLoss                  0.000340462
+GaussianMLPValueFunction/LossAfter      32.051
+GaussianMLPValueFunction/LossBefore     32.4486
+GaussianMLPValueFunction/dLoss           0.397587
+TotalEnvSteps                        29970
+-----------------------------------  ---------------
+2022-08-24 10:11:13 | [trpo_pendulum] epoch #15 | Saving snapshot...
+2022-08-24 10:11:13 | [trpo_pendulum] epoch #15 | Saved
+2022-08-24 10:11:13 | [trpo_pendulum] epoch #15 | Time 9.16 s
+2022-08-24 10:11:13 | [trpo_pendulum] epoch #15 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.472
+Evaluation/AverageReturn              -104.572
+Evaluation/Iteration                    15
+Evaluation/MaxReturn                  -104.477
+Evaluation/MinReturn                  -104.666
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.0943707
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40979
+GaussianMLPPolicy/KL                     0.000110741
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -12.8996
+GaussianMLPPolicy/LossBefore           -12.8933
+GaussianMLPPolicy/dLoss                  0.00633621
+GaussianMLPValueFunction/LossAfter      41.7289
+GaussianMLPValueFunction/LossBefore     42.1993
+GaussianMLPValueFunction/dLoss           0.470375
+TotalEnvSteps                        31968
+-----------------------------------  ---------------
+2022-08-24 10:11:14 | [trpo_pendulum] epoch #16 | Saving snapshot...
+2022-08-24 10:11:14 | [trpo_pendulum] epoch #16 | Saved
+2022-08-24 10:11:14 | [trpo_pendulum] epoch #16 | Time 9.71 s
+2022-08-24 10:11:14 | [trpo_pendulum] epoch #16 | EpochTime 0.55 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.7584
+Evaluation/AverageReturn               -98.4957
+Evaluation/Iteration                    16
+Evaluation/MaxReturn                   -97.6242
+Evaluation/MinReturn                   -99.3673
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.871581
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40926
+GaussianMLPPolicy/KL                     6.95357e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.7251
+GaussianMLPPolicy/LossBefore           -11.726
+GaussianMLPPolicy/dLoss                 -0.00090313
+GaussianMLPValueFunction/LossAfter      35.6991
+GaussianMLPValueFunction/LossBefore     36.121
+GaussianMLPValueFunction/dLoss           0.42186
+TotalEnvSteps                        33966
+-----------------------------------  ---------------
+2022-08-24 10:11:14 | [trpo_pendulum] epoch #17 | Saving snapshot...
+2022-08-24 10:11:15 | [trpo_pendulum] epoch #17 | Saved
+2022-08-24 10:11:15 | [trpo_pendulum] epoch #17 | Time 10.27 s
+2022-08-24 10:11:15 | [trpo_pendulum] epoch #17 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.69591
+Evaluation/AverageReturn               -90.2944
+Evaluation/Iteration                    17
+Evaluation/MaxReturn                   -89.757
+Evaluation/MinReturn                   -90.8319
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.537429
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40893
+GaussianMLPPolicy/KL                     4.4273e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.2715
+GaussianMLPPolicy/LossBefore           -10.2717
+GaussianMLPPolicy/dLoss                 -0.000178337
+GaussianMLPValueFunction/LossAfter      29.3189
+GaussianMLPValueFunction/LossBefore     29.6973
+GaussianMLPValueFunction/dLoss           0.378382
+TotalEnvSteps                        35964
+-----------------------------------  ---------------
+2022-08-24 10:11:15 | [trpo_pendulum] epoch #18 | Saving snapshot...
+2022-08-24 10:11:15 | [trpo_pendulum] epoch #18 | Saved
+2022-08-24 10:11:15 | [trpo_pendulum] epoch #18 | Time 10.81 s
+2022-08-24 10:11:15 | [trpo_pendulum] epoch #18 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.4609
+Evaluation/AverageReturn              -100.299
+Evaluation/Iteration                    18
+Evaluation/MaxReturn                   -96.8875
+Evaluation/MinReturn                  -103.711
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.41181
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40854
+GaussianMLPPolicy/KL                     1.34611e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.8358
+GaussianMLPPolicy/LossBefore           -11.834
+GaussianMLPPolicy/dLoss                  0.00176334
+GaussianMLPValueFunction/LossAfter      35.7523
+GaussianMLPValueFunction/LossBefore     36.1687
+GaussianMLPValueFunction/dLoss           0.416409
+TotalEnvSteps                        37962
+-----------------------------------  ---------------
+2022-08-24 10:11:16 | [trpo_pendulum] epoch #19 | Saving snapshot...
+2022-08-24 10:11:16 | [trpo_pendulum] epoch #19 | Saved
+2022-08-24 10:11:16 | [trpo_pendulum] epoch #19 | Time 11.36 s
+2022-08-24 10:11:16 | [trpo_pendulum] epoch #19 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.401
+Evaluation/AverageReturn               -98.6998
+Evaluation/Iteration                    19
+Evaluation/MaxReturn                   -95.2687
+Evaluation/MinReturn                  -102.131
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.4311
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40812
+GaussianMLPPolicy/KL                     2.87314e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.4807
+GaussianMLPPolicy/LossBefore           -11.4808
+GaussianMLPPolicy/dLoss                 -5.24521e-05
+GaussianMLPValueFunction/LossAfter      34.219
+GaussianMLPValueFunction/LossBefore     34.6322
+GaussianMLPValueFunction/dLoss           0.413155
+TotalEnvSteps                        39960
+-----------------------------------  ---------------
+2022-08-24 10:11:16 | [trpo_pendulum] epoch #20 | Saving snapshot...
+2022-08-24 10:11:16 | [trpo_pendulum] epoch #20 | Saved
+2022-08-24 10:11:16 | [trpo_pendulum] epoch #20 | Time 11.90 s
+2022-08-24 10:11:16 | [trpo_pendulum] epoch #20 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.71592
+Evaluation/AverageReturn               -94.5774
+Evaluation/Iteration                    20
+Evaluation/MaxReturn                   -92.0536
+Evaluation/MinReturn                   -97.1012
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     2.52378
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40776
+GaussianMLPPolicy/KL                     1.41735e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.7424
+GaussianMLPPolicy/LossBefore           -10.7422
+GaussianMLPPolicy/dLoss                  0.000190735
+GaussianMLPValueFunction/LossAfter      31.1681
+GaussianMLPValueFunction/LossBefore     31.5595
+GaussianMLPValueFunction/dLoss           0.391401
+TotalEnvSteps                        41958
+-----------------------------------  ---------------
+2022-08-24 10:11:17 | [trpo_pendulum] epoch #21 | Saving snapshot...
+2022-08-24 10:11:17 | [trpo_pendulum] epoch #21 | Saved
+2022-08-24 10:11:17 | [trpo_pendulum] epoch #21 | Time 12.45 s
+2022-08-24 10:11:17 | [trpo_pendulum] epoch #21 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.67
+Evaluation/AverageReturn              -101.435
+Evaluation/Iteration                    21
+Evaluation/MaxReturn                   -97.0714
+Evaluation/MinReturn                  -105.798
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     4.36356
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40734
+GaussianMLPPolicy/KL                     6.16082e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.7765
+GaussianMLPPolicy/LossBefore           -11.7756
+GaussianMLPPolicy/dLoss                  0.000902176
+GaussianMLPValueFunction/LossAfter      34.9254
+GaussianMLPValueFunction/LossBefore     35.3505
+GaussianMLPValueFunction/dLoss           0.425045
+TotalEnvSteps                        43956
+-----------------------------------  ---------------
+2022-08-24 10:11:17 | [trpo_pendulum] epoch #22 | Saving snapshot...
+2022-08-24 10:11:17 | [trpo_pendulum] epoch #22 | Saved
+2022-08-24 10:11:17 | [trpo_pendulum] epoch #22 | Time 12.98 s
+2022-08-24 10:11:17 | [trpo_pendulum] epoch #22 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.51237
+Evaluation/AverageReturn               -99.3
+Evaluation/Iteration                    22
+Evaluation/MaxReturn                   -98.5998
+Evaluation/MinReturn                  -100
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.700181
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.4069
+GaussianMLPPolicy/KL                     3.69809e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.4316
+GaussianMLPPolicy/LossBefore           -11.4309
+GaussianMLPPolicy/dLoss                  0.000711441
+GaussianMLPValueFunction/LossAfter      33.7984
+GaussianMLPValueFunction/LossBefore     34.2205
+GaussianMLPValueFunction/dLoss           0.422096
+TotalEnvSteps                        45954
+-----------------------------------  ---------------
+2022-08-24 10:11:18 | [trpo_pendulum] epoch #23 | Saving snapshot...
+2022-08-24 10:11:18 | [trpo_pendulum] epoch #23 | Saved
+2022-08-24 10:11:18 | [trpo_pendulum] epoch #23 | Time 13.52 s
+2022-08-24 10:11:18 | [trpo_pendulum] epoch #23 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.4836
+Evaluation/AverageReturn              -107.318
+Evaluation/Iteration                    23
+Evaluation/MaxReturn                  -106.089
+Evaluation/MinReturn                  -108.548
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     1.22939
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40631
+GaussianMLPPolicy/KL                     3.08085e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -12.7567
+GaussianMLPPolicy/LossBefore           -12.7542
+GaussianMLPPolicy/dLoss                  0.00255108
+GaussianMLPValueFunction/LossAfter      39.3881
+GaussianMLPValueFunction/LossBefore     39.8561
+GaussianMLPValueFunction/dLoss           0.467964
+TotalEnvSteps                        47952
+-----------------------------------  ---------------
+2022-08-24 10:11:18 | [trpo_pendulum] epoch #24 | Saving snapshot...
+2022-08-24 10:11:18 | [trpo_pendulum] epoch #24 | Saved
+2022-08-24 10:11:18 | [trpo_pendulum] epoch #24 | Time 14.06 s
+2022-08-24 10:11:18 | [trpo_pendulum] epoch #24 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.92226
+Evaluation/AverageReturn              -100.296
+Evaluation/Iteration                    24
+Evaluation/MaxReturn                  -100.276
+Evaluation/MinReturn                  -100.315
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.0191372
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.4057
+GaussianMLPPolicy/KL                     7.28976e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.4863
+GaussianMLPPolicy/LossBefore           -11.4865
+GaussianMLPPolicy/dLoss                 -0.000184059
+GaussianMLPValueFunction/LossAfter      33.2813
+GaussianMLPValueFunction/LossBefore     33.7026
+GaussianMLPValueFunction/dLoss           0.421314
+TotalEnvSteps                        49950
+-----------------------------------  ---------------
+2022-08-24 10:11:19 | [trpo_pendulum] epoch #25 | Saving snapshot...
+2022-08-24 10:11:19 | [trpo_pendulum] epoch #25 | Saved
+2022-08-24 10:11:19 | [trpo_pendulum] epoch #25 | Time 14.72 s
+2022-08-24 10:11:19 | [trpo_pendulum] epoch #25 | EpochTime 0.65 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.36443
+Evaluation/AverageReturn              -103.816
+Evaluation/Iteration                    25
+Evaluation/MaxReturn                   -99.0023
+Evaluation/MinReturn                  -108.63
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     4.81406
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40501
+GaussianMLPPolicy/KL                     2.91661e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -12.1635
+GaussianMLPPolicy/LossBefore           -12.1615
+GaussianMLPPolicy/dLoss                  0.00207329
+GaussianMLPValueFunction/LossAfter      36.7738
+GaussianMLPValueFunction/LossBefore     37.2267
+GaussianMLPValueFunction/dLoss           0.452927
+TotalEnvSteps                        51948
+-----------------------------------  ---------------
+2022-08-24 10:11:19 | [trpo_pendulum] epoch #26 | Saving snapshot...
+2022-08-24 10:11:20 | [trpo_pendulum] epoch #26 | Saved
+2022-08-24 10:11:20 | [trpo_pendulum] epoch #26 | Time 15.26 s
+2022-08-24 10:11:20 | [trpo_pendulum] epoch #26 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.77609
+Evaluation/AverageReturn              -101.696
+Evaluation/Iteration                    26
+Evaluation/MaxReturn                  -101.399
+Evaluation/MinReturn                  -101.992
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.296434
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40428
+GaussianMLPPolicy/KL                     8.99168e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.6001
+GaussianMLPPolicy/LossBefore           -11.5952
+GaussianMLPPolicy/dLoss                  0.00493431
+GaussianMLPValueFunction/LossAfter      33.8704
+GaussianMLPValueFunction/LossBefore     34.3101
+GaussianMLPValueFunction/dLoss           0.439651
+TotalEnvSteps                        53946
+-----------------------------------  ---------------
+2022-08-24 10:11:20 | [trpo_pendulum] epoch #27 | Saving snapshot...
+2022-08-24 10:11:20 | [trpo_pendulum] epoch #27 | Saved
+2022-08-24 10:11:20 | [trpo_pendulum] epoch #27 | Time 15.81 s
+2022-08-24 10:11:20 | [trpo_pendulum] epoch #27 | EpochTime 0.55 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.90799
+Evaluation/AverageReturn               -99.5844
+Evaluation/Iteration                    27
+Evaluation/MaxReturn                   -99.3556
+Evaluation/MinReturn                   -99.8132
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.228813
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40354
+GaussianMLPPolicy/KL                     3.38664e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -11.2958
+GaussianMLPPolicy/LossBefore           -11.2966
+GaussianMLPPolicy/dLoss                 -0.000776291
+GaussianMLPValueFunction/LossAfter      32.4925
+GaussianMLPValueFunction/LossBefore     32.9162
+GaussianMLPValueFunction/dLoss           0.423714
+TotalEnvSteps                        55944
+-----------------------------------  ---------------
+2022-08-24 10:11:21 | [trpo_pendulum] epoch #28 | Saving snapshot...
+2022-08-24 10:11:21 | [trpo_pendulum] epoch #28 | Saved
+2022-08-24 10:11:21 | [trpo_pendulum] epoch #28 | Time 16.37 s
+2022-08-24 10:11:21 | [trpo_pendulum] epoch #28 | EpochTime 0.55 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.92656
+Evaluation/AverageReturn               -97.3429
+Evaluation/Iteration                    28
+Evaluation/MaxReturn                   -95.5483
+Evaluation/MinReturn                   -99.1375
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     1.79461
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40282
+GaussianMLPPolicy/KL                     6.79829e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.8158
+GaussianMLPPolicy/LossBefore           -10.813
+GaussianMLPPolicy/dLoss                  0.00280094
+GaussianMLPValueFunction/LossAfter      30.3991
+GaussianMLPValueFunction/LossBefore     30.8125
+GaussianMLPValueFunction/dLoss           0.413311
+TotalEnvSteps                        57942
+-----------------------------------  ---------------
+2022-08-24 10:11:21 | [trpo_pendulum] epoch #29 | Saving snapshot...
+2022-08-24 10:11:21 | [trpo_pendulum] epoch #29 | Saved
+2022-08-24 10:11:21 | [trpo_pendulum] epoch #29 | Time 16.91 s
+2022-08-24 10:11:21 | [trpo_pendulum] epoch #29 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.34149
+Evaluation/AverageReturn               -94.6613
+Evaluation/Iteration                    29
+Evaluation/MaxReturn                   -93.2871
+Evaluation/MinReturn                   -96.0354
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     1.37415
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40215
+GaussianMLPPolicy/KL                     4.92762e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.2555
+GaussianMLPPolicy/LossBefore           -10.2553
+GaussianMLPPolicy/dLoss                  0.000247002
+GaussianMLPValueFunction/LossAfter      28.1023
+GaussianMLPValueFunction/LossBefore     28.4928
+GaussianMLPValueFunction/dLoss           0.390469
+TotalEnvSteps                        59940
+-----------------------------------  ---------------
+2022-08-24 10:11:22 | [trpo_pendulum] epoch #30 | Saving snapshot...
+2022-08-24 10:11:22 | [trpo_pendulum] epoch #30 | Saved
+2022-08-24 10:11:22 | [trpo_pendulum] epoch #30 | Time 17.45 s
+2022-08-24 10:11:22 | [trpo_pendulum] epoch #30 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.68438
+Evaluation/AverageReturn               -98.0795
+Evaluation/Iteration                    30
+Evaluation/MaxReturn                   -94.6949
+Evaluation/MinReturn                  -101.464
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.38459
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40147
+GaussianMLPPolicy/KL                     3.61953e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.7302
+GaussianMLPPolicy/LossBefore           -10.7298
+GaussianMLPPolicy/dLoss                  0.000346184
+GaussianMLPValueFunction/LossAfter      29.6417
+GaussianMLPValueFunction/LossBefore     30.0511
+GaussianMLPValueFunction/dLoss           0.409342
+TotalEnvSteps                        61938
+-----------------------------------  ---------------
+2022-08-24 10:11:22 | [trpo_pendulum] epoch #31 | Saving snapshot...
+2022-08-24 10:11:22 | [trpo_pendulum] epoch #31 | Saved
+2022-08-24 10:11:22 | [trpo_pendulum] epoch #31 | Time 18.01 s
+2022-08-24 10:11:22 | [trpo_pendulum] epoch #31 | EpochTime 0.55 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.78885
+Evaluation/AverageReturn               -95.9208
+Evaluation/Iteration                    31
+Evaluation/MaxReturn                   -91.7864
+Evaluation/MinReturn                  -100.055
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     4.13438
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40081
+GaussianMLPPolicy/KL                     9.223e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.4435
+GaussianMLPPolicy/LossBefore           -10.4439
+GaussianMLPPolicy/dLoss                 -0.000385284
+GaussianMLPValueFunction/LossAfter      28.8037
+GaussianMLPValueFunction/LossBefore     29.2037
+GaussianMLPValueFunction/dLoss           0.400061
+TotalEnvSteps                        63936
+-----------------------------------  ---------------
+2022-08-24 10:11:23 | [trpo_pendulum] epoch #32 | Saving snapshot...
+2022-08-24 10:11:23 | [trpo_pendulum] epoch #32 | Saved
+2022-08-24 10:11:23 | [trpo_pendulum] epoch #32 | Time 18.56 s
+2022-08-24 10:11:23 | [trpo_pendulum] epoch #32 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.5433
+Evaluation/AverageReturn               -97.5407
+Evaluation/Iteration                    32
+Evaluation/MaxReturn                   -92.6521
+Evaluation/MinReturn                  -102.429
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     4.88858
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.40014
+GaussianMLPPolicy/KL                     5.92646e-07
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.3577
+GaussianMLPPolicy/LossBefore           -10.3576
+GaussianMLPPolicy/dLoss                  0.000102997
+GaussianMLPValueFunction/LossAfter      27.6044
+GaussianMLPValueFunction/LossBefore     27.9961
+GaussianMLPValueFunction/dLoss           0.391693
+TotalEnvSteps                        65934
+-----------------------------------  ---------------
+2022-08-24 10:11:23 | [trpo_pendulum] epoch #33 | Saving snapshot...
+2022-08-24 10:11:23 | [trpo_pendulum] epoch #33 | Saved
+2022-08-24 10:11:23 | [trpo_pendulum] epoch #33 | Time 19.15 s
+2022-08-24 10:11:23 | [trpo_pendulum] epoch #33 | EpochTime 0.59 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.24083
+Evaluation/AverageReturn               -96.637
+Evaluation/Iteration                    33
+Evaluation/MaxReturn                   -94.1948
+Evaluation/MinReturn                   -99.0792
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     2.44218
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39951
+GaussianMLPPolicy/KL                     1.09521e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.3075
+GaussianMLPPolicy/LossBefore           -10.3063
+GaussianMLPPolicy/dLoss                  0.00119686
+GaussianMLPValueFunction/LossAfter      27.5024
+GaussianMLPValueFunction/LossBefore     27.9005
+GaussianMLPValueFunction/dLoss           0.398054
+TotalEnvSteps                        67932
+-----------------------------------  ---------------
+2022-08-24 10:11:24 | [trpo_pendulum] epoch #34 | Saving snapshot...
+2022-08-24 10:11:24 | [trpo_pendulum] epoch #34 | Saved
+2022-08-24 10:11:24 | [trpo_pendulum] epoch #34 | Time 19.69 s
+2022-08-24 10:11:24 | [trpo_pendulum] epoch #34 | EpochTime 0.54 s
+-----------------------------------  --------------
+Evaluation/AverageDiscountedReturn      -9.55723
+Evaluation/AverageReturn               -97.0972
+Evaluation/Iteration                    34
+Evaluation/MaxReturn                   -91.166
+Evaluation/MinReturn                  -103.028
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     5.93117
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39885
+GaussianMLPPolicy/KL                     4.2991e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.3294
+GaussianMLPPolicy/LossBefore           -10.3294
+GaussianMLPPolicy/dLoss                  4.3869e-05
+GaussianMLPValueFunction/LossAfter      27.6963
+GaussianMLPValueFunction/LossBefore     28.0904
+GaussianMLPValueFunction/dLoss           0.394169
+TotalEnvSteps                        69930
+-----------------------------------  --------------
+2022-08-24 10:11:24 | [trpo_pendulum] epoch #35 | Saving snapshot...
+2022-08-24 10:11:24 | [trpo_pendulum] epoch #35 | Saved
+2022-08-24 10:11:24 | [trpo_pendulum] epoch #35 | Time 20.23 s
+2022-08-24 10:11:24 | [trpo_pendulum] epoch #35 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.0887
+Evaluation/AverageReturn               -96.2381
+Evaluation/Iteration                    35
+Evaluation/MaxReturn                   -96.0866
+Evaluation/MinReturn                   -96.3896
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.151472
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39823
+GaussianMLPPolicy/KL                     1.52184e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.93371
+GaussianMLPPolicy/LossBefore            -9.93333
+GaussianMLPPolicy/dLoss                  0.000375748
+GaussianMLPValueFunction/LossAfter      25.7728
+GaussianMLPValueFunction/LossBefore     26.1628
+GaussianMLPValueFunction/dLoss           0.390026
+TotalEnvSteps                        71928
+-----------------------------------  ---------------
+2022-08-24 10:11:25 | [trpo_pendulum] epoch #36 | Saving snapshot...
+2022-08-24 10:11:25 | [trpo_pendulum] epoch #36 | Saved
+2022-08-24 10:11:25 | [trpo_pendulum] epoch #36 | Time 20.77 s
+2022-08-24 10:11:25 | [trpo_pendulum] epoch #36 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.37241
+Evaluation/AverageReturn               -99.4922
+Evaluation/Iteration                    36
+Evaluation/MaxReturn                   -95.5697
+Evaluation/MinReturn                  -103.415
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.92249
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39755
+GaussianMLPPolicy/KL                     2.65866e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.6022
+GaussianMLPPolicy/LossBefore           -10.5998
+GaussianMLPPolicy/dLoss                  0.00238514
+GaussianMLPValueFunction/LossAfter      28.5178
+GaussianMLPValueFunction/LossBefore     28.936
+GaussianMLPValueFunction/dLoss           0.41818
+TotalEnvSteps                        73926
+-----------------------------------  ---------------
+2022-08-24 10:11:26 | [trpo_pendulum] epoch #37 | Saving snapshot...
+2022-08-24 10:11:26 | [trpo_pendulum] epoch #37 | Saved
+2022-08-24 10:11:26 | [trpo_pendulum] epoch #37 | Time 21.32 s
+2022-08-24 10:11:26 | [trpo_pendulum] epoch #37 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.73801
+Evaluation/AverageReturn               -90.4148
+Evaluation/Iteration                    37
+Evaluation/MaxReturn                   -86.5803
+Evaluation/MinReturn                   -94.2494
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.83452
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39695
+GaussianMLPPolicy/KL                     5.50147e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.02695
+GaussianMLPPolicy/LossBefore            -9.02496
+GaussianMLPPolicy/dLoss                  0.00198555
+GaussianMLPValueFunction/LossAfter      22.4965
+GaussianMLPValueFunction/LossBefore     22.8551
+GaussianMLPValueFunction/dLoss           0.358677
+TotalEnvSteps                        75924
+-----------------------------------  ---------------
+2022-08-24 10:11:26 | [trpo_pendulum] epoch #38 | Saving snapshot...
+2022-08-24 10:11:26 | [trpo_pendulum] epoch #38 | Saved
+2022-08-24 10:11:26 | [trpo_pendulum] epoch #38 | Time 21.88 s
+2022-08-24 10:11:26 | [trpo_pendulum] epoch #38 | EpochTime 0.56 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.43487
+Evaluation/AverageReturn               -93.0707
+Evaluation/Iteration                    38
+Evaluation/MaxReturn                   -91.8999
+Evaluation/MinReturn                   -94.2415
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     1.1708
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39643
+GaussianMLPPolicy/KL                     2.20472e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.39536
+GaussianMLPPolicy/LossBefore            -9.39601
+GaussianMLPPolicy/dLoss                 -0.000647545
+GaussianMLPValueFunction/LossAfter      23.6788
+GaussianMLPValueFunction/LossBefore     24.0542
+GaussianMLPValueFunction/dLoss           0.375429
+TotalEnvSteps                        77922
+-----------------------------------  ---------------
+2022-08-24 10:11:27 | [trpo_pendulum] epoch #39 | Saving snapshot...
+2022-08-24 10:11:27 | [trpo_pendulum] epoch #39 | Saved
+2022-08-24 10:11:27 | [trpo_pendulum] epoch #39 | Time 22.42 s
+2022-08-24 10:11:27 | [trpo_pendulum] epoch #39 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.70055
+Evaluation/AverageReturn               -97.2151
+Evaluation/Iteration                    39
+Evaluation/MaxReturn                   -93.489
+Evaluation/MinReturn                  -100.941
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.72612
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39589
+GaussianMLPPolicy/KL                     5.96587e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter            -10.0793
+GaussianMLPPolicy/LossBefore           -10.0794
+GaussianMLPPolicy/dLoss                 -0.000146866
+GaussianMLPValueFunction/LossAfter      26.1985
+GaussianMLPValueFunction/LossBefore     26.5934
+GaussianMLPValueFunction/dLoss           0.394907
+TotalEnvSteps                        79920
+-----------------------------------  ---------------
+2022-08-24 10:11:27 | [trpo_pendulum] epoch #40 | Saving snapshot...
+2022-08-24 10:11:27 | [trpo_pendulum] epoch #40 | Saved
+2022-08-24 10:11:27 | [trpo_pendulum] epoch #40 | Time 22.94 s
+2022-08-24 10:11:27 | [trpo_pendulum] epoch #40 | EpochTime 0.52 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.77611
+Evaluation/AverageReturn               -96.0291
+Evaluation/Iteration                    40
+Evaluation/MaxReturn                   -92.3575
+Evaluation/MinReturn                   -99.7007
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.67163
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39532
+GaussianMLPPolicy/KL                     6.76221e-07
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.66428
+GaussianMLPPolicy/LossBefore            -9.66419
+GaussianMLPPolicy/dLoss                  8.7738e-05
+GaussianMLPValueFunction/LossAfter      24.6191
+GaussianMLPValueFunction/LossBefore     25.0022
+GaussianMLPValueFunction/dLoss           0.38306
+TotalEnvSteps                        81918
+-----------------------------------  ---------------
+2022-08-24 10:11:28 | [trpo_pendulum] epoch #41 | Saving snapshot...
+2022-08-24 10:11:28 | [trpo_pendulum] epoch #41 | Saved
+2022-08-24 10:11:28 | [trpo_pendulum] epoch #41 | Time 23.48 s
+2022-08-24 10:11:28 | [trpo_pendulum] epoch #41 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.3326
+Evaluation/AverageReturn               -95.7242
+Evaluation/Iteration                    41
+Evaluation/MaxReturn                   -93.954
+Evaluation/MinReturn                   -97.4944
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     1.77021
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39475
+GaussianMLPPolicy/KL                     1.99834e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.51982
+GaussianMLPPolicy/LossBefore            -9.51948
+GaussianMLPPolicy/dLoss                  0.00033474
+GaussianMLPValueFunction/LossAfter      23.7696
+GaussianMLPValueFunction/LossBefore     24.1406
+GaussianMLPValueFunction/dLoss           0.370962
+TotalEnvSteps                        83916
+-----------------------------------  ---------------
+2022-08-24 10:11:28 | [trpo_pendulum] epoch #42 | Saving snapshot...
+2022-08-24 10:11:28 | [trpo_pendulum] epoch #42 | Saved
+2022-08-24 10:11:28 | [trpo_pendulum] epoch #42 | Time 24.00 s
+2022-08-24 10:11:28 | [trpo_pendulum] epoch #42 | EpochTime 0.52 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.0297
+Evaluation/AverageReturn               -95.019
+Evaluation/Iteration                    42
+Evaluation/MaxReturn                   -94.5334
+Evaluation/MinReturn                   -95.5045
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.485542
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39418
+GaussianMLPPolicy/KL                     2.49092e-05
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.35162
+GaussianMLPPolicy/LossBefore            -9.34976
+GaussianMLPPolicy/dLoss                  0.00185966
+GaussianMLPValueFunction/LossAfter      23.1757
+GaussianMLPValueFunction/LossBefore     23.5418
+GaussianMLPValueFunction/dLoss           0.366045
+TotalEnvSteps                        85914
+-----------------------------------  ---------------
+2022-08-24 10:11:29 | [trpo_pendulum] epoch #43 | Saving snapshot...
+2022-08-24 10:11:29 | [trpo_pendulum] epoch #43 | Saved
+2022-08-24 10:11:29 | [trpo_pendulum] epoch #43 | Time 24.55 s
+2022-08-24 10:11:29 | [trpo_pendulum] epoch #43 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.3115
+Evaluation/AverageReturn               -92.0824
+Evaluation/Iteration                    43
+Evaluation/MaxReturn                   -87.7312
+Evaluation/MinReturn                   -96.4337
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     4.35126
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39368
+GaussianMLPPolicy/KL                     5.84564e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -8.85612
+GaussianMLPPolicy/LossBefore            -8.85649
+GaussianMLPPolicy/dLoss                 -0.00037384
+GaussianMLPValueFunction/LossAfter      21.1625
+GaussianMLPValueFunction/LossBefore     21.5295
+GaussianMLPValueFunction/dLoss           0.36697
+TotalEnvSteps                        87912
+-----------------------------------  ---------------
+2022-08-24 10:11:29 | [trpo_pendulum] epoch #44 | Saving snapshot...
+2022-08-24 10:11:29 | [trpo_pendulum] epoch #44 | Saved
+2022-08-24 10:11:29 | [trpo_pendulum] epoch #44 | Time 25.09 s
+2022-08-24 10:11:29 | [trpo_pendulum] epoch #44 | EpochTime 0.54 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.72718
+Evaluation/AverageReturn               -96.6032
+Evaluation/Iteration                    44
+Evaluation/MaxReturn                   -96.3011
+Evaluation/MinReturn                   -96.9053
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.302103
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39316
+GaussianMLPPolicy/KL                     1.00675e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.40509
+GaussianMLPPolicy/LossBefore            -9.40504
+GaussianMLPPolicy/dLoss                  4.673e-05
+GaussianMLPValueFunction/LossAfter      22.9348
+GaussianMLPValueFunction/LossBefore     23.3199
+GaussianMLPValueFunction/dLoss           0.385098
+TotalEnvSteps                        89910
+-----------------------------------  ---------------
+2022-08-24 10:11:30 | [trpo_pendulum] epoch #45 | Saving snapshot...
+2022-08-24 10:11:30 | [trpo_pendulum] epoch #45 | Saved
+2022-08-24 10:11:30 | [trpo_pendulum] epoch #45 | Time 25.61 s
+2022-08-24 10:11:30 | [trpo_pendulum] epoch #45 | EpochTime 0.52 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.4038
+Evaluation/AverageReturn               -95.4618
+Evaluation/Iteration                    45
+Evaluation/MaxReturn                   -92.0126
+Evaluation/MinReturn                   -98.911
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     3.44916
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39264
+GaussianMLPPolicy/KL                     2.66415e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.1622
+GaussianMLPPolicy/LossBefore            -9.16176
+GaussianMLPPolicy/dLoss                  0.000432014
+GaussianMLPValueFunction/LossAfter      22.1538
+GaussianMLPValueFunction/LossBefore     22.5338
+GaussianMLPValueFunction/dLoss           0.38006
+TotalEnvSteps                        91908
+-----------------------------------  ---------------
+2022-08-24 10:11:30 | [trpo_pendulum] epoch #46 | Saving snapshot...
+2022-08-24 10:11:30 | [trpo_pendulum] epoch #46 | Saved
+2022-08-24 10:11:30 | [trpo_pendulum] epoch #46 | Time 26.15 s
+2022-08-24 10:11:30 | [trpo_pendulum] epoch #46 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.2294
+Evaluation/AverageReturn               -97.5425
+Evaluation/Iteration                    46
+Evaluation/MaxReturn                   -92.0936
+Evaluation/MinReturn                  -102.991
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     5.44891
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39206
+GaussianMLPPolicy/KL                     3.89756e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -9.42526
+GaussianMLPPolicy/LossBefore            -9.42491
+GaussianMLPPolicy/dLoss                  0.000347137
+GaussianMLPValueFunction/LossAfter      22.8924
+GaussianMLPValueFunction/LossBefore     23.2726
+GaussianMLPValueFunction/dLoss           0.380262
+TotalEnvSteps                        93906
+-----------------------------------  ---------------
+2022-08-24 10:11:31 | [trpo_pendulum] epoch #47 | Saving snapshot...
+2022-08-24 10:11:31 | [trpo_pendulum] epoch #47 | Saved
+2022-08-24 10:11:31 | [trpo_pendulum] epoch #47 | Time 26.68 s
+2022-08-24 10:11:31 | [trpo_pendulum] epoch #47 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -8.40092
+Evaluation/AverageReturn               -89.3164
+Evaluation/Iteration                    47
+Evaluation/MaxReturn                   -86.899
+Evaluation/MinReturn                   -91.7337
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     2.41734
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39158
+GaussianMLPPolicy/KL                     2.27256e-07
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -8.2018
+GaussianMLPPolicy/LossBefore            -8.20188
+GaussianMLPPolicy/dLoss                 -7.62939e-05
+GaussianMLPValueFunction/LossAfter      18.8645
+GaussianMLPValueFunction/LossBefore     19.1902
+GaussianMLPValueFunction/dLoss           0.325691
+TotalEnvSteps                        95904
+-----------------------------------  ---------------
+2022-08-24 10:11:31 | [trpo_pendulum] epoch #48 | Saving snapshot...
+2022-08-24 10:11:31 | [trpo_pendulum] epoch #48 | Saved
+2022-08-24 10:11:31 | [trpo_pendulum] epoch #48 | Time 27.21 s
+2022-08-24 10:11:31 | [trpo_pendulum] epoch #48 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn     -10.2276
+Evaluation/AverageReturn               -94.8466
+Evaluation/Iteration                    48
+Evaluation/MaxReturn                   -94.1791
+Evaluation/MinReturn                   -95.514
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.667472
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39107
+GaussianMLPPolicy/KL                     4.26929e-07
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -8.87413
+GaussianMLPPolicy/LossBefore            -8.87388
+GaussianMLPPolicy/dLoss                  0.000244141
+GaussianMLPValueFunction/LossAfter      21.274
+GaussianMLPValueFunction/LossBefore     21.6244
+GaussianMLPValueFunction/dLoss           0.350388
+TotalEnvSteps                        97902
+-----------------------------------  ---------------
+2022-08-24 10:11:32 | [trpo_pendulum] epoch #49 | Saving snapshot...
+2022-08-24 10:11:32 | [trpo_pendulum] epoch #49 | Saved
+2022-08-24 10:11:32 | [trpo_pendulum] epoch #49 | Time 27.74 s
+2022-08-24 10:11:32 | [trpo_pendulum] epoch #49 | EpochTime 0.53 s
+-----------------------------------  ---------------
+Evaluation/AverageDiscountedReturn      -9.1745
+Evaluation/AverageReturn               -90.7536
+Evaluation/Iteration                    49
+Evaluation/MaxReturn                   -90.6246
+Evaluation/MinReturn                   -90.8825
+Evaluation/NumEpisodes                   2
+Evaluation/StdReturn                     0.128928
+Evaluation/TerminationRate               0
+GaussianMLPPolicy/Entropy                1.39064
+GaussianMLPPolicy/KL                     5.55583e-06
+GaussianMLPPolicy/KLBefore               0
+GaussianMLPPolicy/LossAfter             -8.06643
+GaussianMLPPolicy/LossBefore            -8.06598
+GaussianMLPPolicy/dLoss                  0.000445366
+GaussianMLPValueFunction/LossAfter      17.9142
+GaussianMLPValueFunction/LossBefore     18.2526
+GaussianMLPValueFunction/dLoss           0.338345
+TotalEnvSteps                        99900
+-----------------------------------  ---------------
+2022-08-24 10:11:32 | [trpo_pendulum] epoch #50 | Saving snapshot...
+2022-08-24 10:11:33 | [trpo_pendulum] epoch #50 | Saved
+2022-08-24 10:11:33 | [trpo_pendulum] epoch #50 | Time 28.26 s
+2022-08-24 10:11:33 | [trpo_pendulum] epoch #50 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.01
+Evaluation/AverageReturn                -93.7306
+Evaluation/Iteration                     50
+Evaluation/MaxReturn                    -88.5991
+Evaluation/MinReturn                    -98.8621
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      5.1315
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.39018
+GaussianMLPPolicy/KL                      2.90643e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -8.56856
+GaussianMLPPolicy/LossBefore             -8.56848
+GaussianMLPPolicy/dLoss                   7.62939e-05
+GaussianMLPValueFunction/LossAfter       19.9622
+GaussianMLPValueFunction/LossBefore      20.3225
+GaussianMLPValueFunction/dLoss            0.360338
+TotalEnvSteps                        101898
+-----------------------------------  ----------------
+2022-08-24 10:11:33 | [trpo_pendulum] epoch #51 | Saving snapshot...
+2022-08-24 10:11:33 | [trpo_pendulum] epoch #51 | Saved
+2022-08-24 10:11:33 | [trpo_pendulum] epoch #51 | Time 28.78 s
+2022-08-24 10:11:33 | [trpo_pendulum] epoch #51 | EpochTime 0.51 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn      -10.0948
+Evaluation/AverageReturn                -97.2255
+Evaluation/Iteration                     51
+Evaluation/MaxReturn                    -92.4886
+Evaluation/MinReturn                   -101.962
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      4.73692
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38964
+GaussianMLPPolicy/KL                      5.07624e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -8.98421
+GaussianMLPPolicy/LossBefore             -8.98321
+GaussianMLPPolicy/dLoss                   0.000994682
+GaussianMLPValueFunction/LossAfter       21.2946
+GaussianMLPValueFunction/LossBefore      21.673
+GaussianMLPValueFunction/dLoss            0.378386
+TotalEnvSteps                        103896
+-----------------------------------  ----------------
+2022-08-24 10:11:34 | [trpo_pendulum] epoch #52 | Saving snapshot...
+2022-08-24 10:11:34 | [trpo_pendulum] epoch #52 | Saved
+2022-08-24 10:11:34 | [trpo_pendulum] epoch #52 | Time 29.42 s
+2022-08-24 10:11:34 | [trpo_pendulum] epoch #52 | EpochTime 0.63 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn      -10.1075
+Evaluation/AverageReturn                -92.5592
+Evaluation/Iteration                     52
+Evaluation/MaxReturn                    -90.4763
+Evaluation/MinReturn                    -94.6422
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.08293
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38911
+GaussianMLPPolicy/KL                      9.17165e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -8.05237
+GaussianMLPPolicy/LossBefore             -8.05204
+GaussianMLPPolicy/dLoss                   0.000328064
+GaussianMLPValueFunction/LossAfter       17.6048
+GaussianMLPValueFunction/LossBefore      17.9429
+GaussianMLPValueFunction/dLoss            0.338108
+TotalEnvSteps                        105894
+-----------------------------------  ----------------
+2022-08-24 10:11:34 | [trpo_pendulum] epoch #53 | Saving snapshot...
+2022-08-24 10:11:34 | [trpo_pendulum] epoch #53 | Saved
+2022-08-24 10:11:34 | [trpo_pendulum] epoch #53 | Time 29.98 s
+2022-08-24 10:11:34 | [trpo_pendulum] epoch #53 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.28393
+Evaluation/AverageReturn                -92.2463
+Evaluation/Iteration                     53
+Evaluation/MaxReturn                    -90.1218
+Evaluation/MinReturn                    -94.3708
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.12452
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38862
+GaussianMLPPolicy/KL                      8.86235e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.95847
+GaussianMLPPolicy/LossBefore             -7.9583
+GaussianMLPPolicy/dLoss                   0.000169277
+GaussianMLPValueFunction/LossAfter       17.4363
+GaussianMLPValueFunction/LossBefore      17.7849
+GaussianMLPValueFunction/dLoss            0.348625
+TotalEnvSteps                        107892
+-----------------------------------  ----------------
+2022-08-24 10:11:35 | [trpo_pendulum] epoch #54 | Saving snapshot...
+2022-08-24 10:11:35 | [trpo_pendulum] epoch #54 | Saved
+2022-08-24 10:11:35 | [trpo_pendulum] epoch #54 | Time 30.51 s
+2022-08-24 10:11:35 | [trpo_pendulum] epoch #54 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.83224
+Evaluation/AverageReturn                -99.2848
+Evaluation/Iteration                     54
+Evaluation/MaxReturn                    -98.019
+Evaluation/MinReturn                   -100.551
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.26579
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38802
+GaussianMLPPolicy/KL                      2.50935e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -9.11668
+GaussianMLPPolicy/LossBefore             -9.11641
+GaussianMLPPolicy/dLoss                   0.000270844
+GaussianMLPValueFunction/LossAfter       21.4989
+GaussianMLPValueFunction/LossBefore      21.8871
+GaussianMLPValueFunction/dLoss            0.388216
+TotalEnvSteps                        109890
+-----------------------------------  ----------------
+2022-08-24 10:11:35 | [trpo_pendulum] epoch #55 | Saving snapshot...
+2022-08-24 10:11:35 | [trpo_pendulum] epoch #55 | Saved
+2022-08-24 10:11:35 | [trpo_pendulum] epoch #55 | Time 31.03 s
+2022-08-24 10:11:35 | [trpo_pendulum] epoch #55 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.17122
+Evaluation/AverageReturn                -94.7818
+Evaluation/Iteration                     55
+Evaluation/MaxReturn                    -93.3969
+Evaluation/MinReturn                    -96.1667
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.38488
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.3874
+GaussianMLPPolicy/KL                      1.99756e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -8.25339
+GaussianMLPPolicy/LossBefore             -8.2532
+GaussianMLPPolicy/dLoss                   0.000184059
+GaussianMLPValueFunction/LossAfter       18.4386
+GaussianMLPValueFunction/LossBefore      18.804
+GaussianMLPValueFunction/dLoss            0.365381
+TotalEnvSteps                        111888
+-----------------------------------  ----------------
+2022-08-24 10:11:36 | [trpo_pendulum] epoch #56 | Saving snapshot...
+2022-08-24 10:11:36 | [trpo_pendulum] epoch #56 | Saved
+2022-08-24 10:11:36 | [trpo_pendulum] epoch #56 | Time 31.56 s
+2022-08-24 10:11:36 | [trpo_pendulum] epoch #56 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.63132
+Evaluation/AverageReturn                -90.41
+Evaluation/Iteration                     56
+Evaluation/MaxReturn                    -89.1675
+Evaluation/MinReturn                    -91.6526
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.24254
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38686
+GaussianMLPPolicy/KL                      1.24712e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.30676
+GaussianMLPPolicy/LossBefore             -7.30543
+GaussianMLPPolicy/dLoss                   0.00133371
+GaussianMLPValueFunction/LossAfter       14.9192
+GaussianMLPValueFunction/LossBefore      15.2506
+GaussianMLPValueFunction/dLoss            0.331389
+TotalEnvSteps                        113886
+-----------------------------------  ----------------
+2022-08-24 10:11:36 | [trpo_pendulum] epoch #57 | Saving snapshot...
+2022-08-24 10:11:36 | [trpo_pendulum] epoch #57 | Saved
+2022-08-24 10:11:36 | [trpo_pendulum] epoch #57 | Time 32.08 s
+2022-08-24 10:11:36 | [trpo_pendulum] epoch #57 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.20159
+Evaluation/AverageReturn                -91.2489
+Evaluation/Iteration                     57
+Evaluation/MaxReturn                    -87.6645
+Evaluation/MinReturn                    -94.8332
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      3.58433
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38634
+GaussianMLPPolicy/KL                      2.65889e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.64436
+GaussianMLPPolicy/LossBefore             -7.64447
+GaussianMLPPolicy/dLoss                  -0.000110626
+GaussianMLPValueFunction/LossAfter       16.4785
+GaussianMLPValueFunction/LossBefore      16.8203
+GaussianMLPValueFunction/dLoss            0.341852
+TotalEnvSteps                        115884
+-----------------------------------  ----------------
+2022-08-24 10:11:37 | [trpo_pendulum] epoch #58 | Saving snapshot...
+2022-08-24 10:11:37 | [trpo_pendulum] epoch #58 | Saved
+2022-08-24 10:11:37 | [trpo_pendulum] epoch #58 | Time 32.63 s
+2022-08-24 10:11:37 | [trpo_pendulum] epoch #58 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.96373
+Evaluation/AverageReturn                -91.2059
+Evaluation/Iteration                     58
+Evaluation/MaxReturn                    -90.7775
+Evaluation/MinReturn                    -91.6344
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.428407
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38586
+GaussianMLPPolicy/KL                      6.65533e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.33068
+GaussianMLPPolicy/LossBefore             -7.32988
+GaussianMLPPolicy/dLoss                   0.000797749
+GaussianMLPValueFunction/LossAfter       14.917
+GaussianMLPValueFunction/LossBefore      15.2485
+GaussianMLPValueFunction/dLoss            0.331494
+TotalEnvSteps                        117882
+-----------------------------------  ----------------
+2022-08-24 10:11:37 | [trpo_pendulum] epoch #59 | Saving snapshot...
+2022-08-24 10:11:37 | [trpo_pendulum] epoch #59 | Saved
+2022-08-24 10:11:37 | [trpo_pendulum] epoch #59 | Time 33.15 s
+2022-08-24 10:11:37 | [trpo_pendulum] epoch #59 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.6638
+Evaluation/AverageReturn                -96.4654
+Evaluation/Iteration                     59
+Evaluation/MaxReturn                    -93.3248
+Evaluation/MinReturn                    -99.606
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      3.14057
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38536
+GaussianMLPPolicy/KL                      7.62625e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -8.0276
+GaussianMLPPolicy/LossBefore             -8.02732
+GaussianMLPPolicy/dLoss                   0.00028038
+GaussianMLPValueFunction/LossAfter       16.9751
+GaussianMLPValueFunction/LossBefore      17.3402
+GaussianMLPValueFunction/dLoss            0.365082
+TotalEnvSteps                        119880
+-----------------------------------  ----------------
+2022-08-24 10:11:38 | [trpo_pendulum] epoch #60 | Saving snapshot...
+2022-08-24 10:11:38 | [trpo_pendulum] epoch #60 | Saved
+2022-08-24 10:11:38 | [trpo_pendulum] epoch #60 | Time 33.68 s
+2022-08-24 10:11:38 | [trpo_pendulum] epoch #60 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.32628
+Evaluation/AverageReturn                -93.5584
+Evaluation/Iteration                     60
+Evaluation/MaxReturn                    -89.6097
+Evaluation/MinReturn                    -97.5071
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      3.94872
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38485
+GaussianMLPPolicy/KL                      1.13747e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.58921
+GaussianMLPPolicy/LossBefore             -7.58884
+GaussianMLPPolicy/dLoss                   0.000367641
+GaussianMLPValueFunction/LossAfter       16.0653
+GaussianMLPValueFunction/LossBefore      16.4008
+GaussianMLPValueFunction/dLoss            0.335535
+TotalEnvSteps                        121878
+-----------------------------------  ----------------
+2022-08-24 10:11:38 | [trpo_pendulum] epoch #61 | Saving snapshot...
+2022-08-24 10:11:38 | [trpo_pendulum] epoch #61 | Saved
+2022-08-24 10:11:38 | [trpo_pendulum] epoch #61 | Time 34.22 s
+2022-08-24 10:11:38 | [trpo_pendulum] epoch #61 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.44532
+Evaluation/AverageReturn                -95.4056
+Evaluation/Iteration                     61
+Evaluation/MaxReturn                    -91.1908
+Evaluation/MinReturn                    -99.6205
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      4.21487
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38431
+GaussianMLPPolicy/KL                      2.04467e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.80275
+GaussianMLPPolicy/LossBefore             -7.80194
+GaussianMLPPolicy/dLoss                   0.000809669
+GaussianMLPValueFunction/LossAfter       16.5189
+GaussianMLPValueFunction/LossBefore      16.866
+GaussianMLPValueFunction/dLoss            0.347151
+TotalEnvSteps                        123876
+-----------------------------------  ----------------
+2022-08-24 10:11:39 | [trpo_pendulum] epoch #62 | Saving snapshot...
+2022-08-24 10:11:39 | [trpo_pendulum] epoch #62 | Saved
+2022-08-24 10:11:39 | [trpo_pendulum] epoch #62 | Time 34.74 s
+2022-08-24 10:11:39 | [trpo_pendulum] epoch #62 | EpochTime 0.51 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.2592
+Evaluation/AverageReturn                -93.103
+Evaluation/Iteration                     62
+Evaluation/MaxReturn                    -91.5553
+Evaluation/MinReturn                    -94.6507
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.54768
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38378
+GaussianMLPPolicy/KL                      2.24458e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.31712
+GaussianMLPPolicy/LossBefore             -7.31665
+GaussianMLPPolicy/dLoss                   0.000467777
+GaussianMLPValueFunction/LossAfter       14.9925
+GaussianMLPValueFunction/LossBefore      15.3225
+GaussianMLPValueFunction/dLoss            0.329996
+TotalEnvSteps                        125874
+-----------------------------------  ----------------
+2022-08-24 10:11:40 | [trpo_pendulum] epoch #63 | Saving snapshot...
+2022-08-24 10:11:40 | [trpo_pendulum] epoch #63 | Saved
+2022-08-24 10:11:40 | [trpo_pendulum] epoch #63 | Time 35.28 s
+2022-08-24 10:11:40 | [trpo_pendulum] epoch #63 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.73052
+Evaluation/AverageReturn                -95.2031
+Evaluation/Iteration                     63
+Evaluation/MaxReturn                    -92.502
+Evaluation/MinReturn                    -97.9041
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.70102
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38324
+GaussianMLPPolicy/KL                      2.07803e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.5852
+GaussianMLPPolicy/LossBefore             -7.58488
+GaussianMLPPolicy/dLoss                   0.000323772
+GaussianMLPValueFunction/LossAfter       15.5489
+GaussianMLPValueFunction/LossBefore      15.8987
+GaussianMLPValueFunction/dLoss            0.349811
+TotalEnvSteps                        127872
+-----------------------------------  ----------------
+2022-08-24 10:11:40 | [trpo_pendulum] epoch #64 | Saving snapshot...
+2022-08-24 10:11:40 | [trpo_pendulum] epoch #64 | Saved
+2022-08-24 10:11:40 | [trpo_pendulum] epoch #64 | Time 35.82 s
+2022-08-24 10:11:40 | [trpo_pendulum] epoch #64 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn      -10.2826
+Evaluation/AverageReturn                -96.3949
+Evaluation/Iteration                     64
+Evaluation/MaxReturn                    -94.594
+Evaluation/MinReturn                    -98.1957
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.80083
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38267
+GaussianMLPPolicy/KL                      5.23905e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.49043
+GaussianMLPPolicy/LossBefore             -7.49051
+GaussianMLPPolicy/dLoss                  -8.24928e-05
+GaussianMLPValueFunction/LossAfter       15.1166
+GaussianMLPValueFunction/LossBefore      15.4679
+GaussianMLPValueFunction/dLoss            0.351248
+TotalEnvSteps                        129870
+-----------------------------------  ----------------
+2022-08-24 10:11:41 | [trpo_pendulum] epoch #65 | Saving snapshot...
+2022-08-24 10:11:41 | [trpo_pendulum] epoch #65 | Saved
+2022-08-24 10:11:41 | [trpo_pendulum] epoch #65 | Time 36.35 s
+2022-08-24 10:11:41 | [trpo_pendulum] epoch #65 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.39748
+Evaluation/AverageReturn                -93.2532
+Evaluation/Iteration                     65
+Evaluation/MaxReturn                    -90.3767
+Evaluation/MinReturn                    -96.1298
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.87653
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.3821
+GaussianMLPPolicy/KL                      2.0597e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.09199
+GaussianMLPPolicy/LossBefore             -7.09182
+GaussianMLPPolicy/dLoss                   0.000173569
+GaussianMLPValueFunction/LossAfter       14.437
+GaussianMLPValueFunction/LossBefore      14.7576
+GaussianMLPValueFunction/dLoss            0.320546
+TotalEnvSteps                        131868
+-----------------------------------  ----------------
+2022-08-24 10:11:41 | [trpo_pendulum] epoch #66 | Saving snapshot...
+2022-08-24 10:11:41 | [trpo_pendulum] epoch #66 | Saved
+2022-08-24 10:11:41 | [trpo_pendulum] epoch #66 | Time 36.90 s
+2022-08-24 10:11:41 | [trpo_pendulum] epoch #66 | EpochTime 0.55 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.48945
+Evaluation/AverageReturn                -91.9246
+Evaluation/Iteration                     66
+Evaluation/MaxReturn                    -89.2773
+Evaluation/MinReturn                    -94.5719
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.64728
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38156
+GaussianMLPPolicy/KL                      4.87003e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -6.73694
+GaussianMLPPolicy/LossBefore             -6.73641
+GaussianMLPPolicy/dLoss                   0.000526905
+GaussianMLPValueFunction/LossAfter       13.1442
+GaussianMLPValueFunction/LossBefore      13.4491
+GaussianMLPValueFunction/dLoss            0.304894
+TotalEnvSteps                        133866
+-----------------------------------  ----------------
+2022-08-24 10:11:42 | [trpo_pendulum] epoch #67 | Saving snapshot...
+2022-08-24 10:11:42 | [trpo_pendulum] epoch #67 | Saved
+2022-08-24 10:11:42 | [trpo_pendulum] epoch #67 | Time 37.44 s
+2022-08-24 10:11:42 | [trpo_pendulum] epoch #67 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.93075
+Evaluation/AverageReturn                -94.7755
+Evaluation/Iteration                     67
+Evaluation/MaxReturn                    -92.4603
+Evaluation/MinReturn                    -97.0907
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.31517
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38099
+GaussianMLPPolicy/KL                      3.83118e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -6.96848
+GaussianMLPPolicy/LossBefore             -6.96832
+GaussianMLPPolicy/dLoss                   0.000157833
+GaussianMLPValueFunction/LossAfter       13.6964
+GaussianMLPValueFunction/LossBefore      14.0238
+GaussianMLPValueFunction/dLoss            0.327476
+TotalEnvSteps                        135864
+-----------------------------------  ----------------
+2022-08-24 10:11:42 | [trpo_pendulum] epoch #68 | Saving snapshot...
+2022-08-24 10:11:42 | [trpo_pendulum] epoch #68 | Saved
+2022-08-24 10:11:42 | [trpo_pendulum] epoch #68 | Time 37.99 s
+2022-08-24 10:11:42 | [trpo_pendulum] epoch #68 | EpochTime 0.55 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.76671
+Evaluation/AverageReturn                -90.1493
+Evaluation/Iteration                     68
+Evaluation/MaxReturn                    -89.3322
+Evaluation/MinReturn                    -90.9663
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.817076
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.38045
+GaussianMLPPolicy/KL                      6.08336e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -6.23383
+GaussianMLPPolicy/LossBefore             -6.2333
+GaussianMLPPolicy/dLoss                   0.000533104
+GaussianMLPValueFunction/LossAfter       11.7699
+GaussianMLPValueFunction/LossBefore      12.0567
+GaussianMLPValueFunction/dLoss            0.286889
+TotalEnvSteps                        137862
+-----------------------------------  ----------------
+2022-08-24 10:11:43 | [trpo_pendulum] epoch #69 | Saving snapshot...
+2022-08-24 10:11:43 | [trpo_pendulum] epoch #69 | Saved
+2022-08-24 10:11:43 | [trpo_pendulum] epoch #69 | Time 38.54 s
+2022-08-24 10:11:43 | [trpo_pendulum] epoch #69 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.5462
+Evaluation/AverageReturn                -96.0563
+Evaluation/Iteration                     69
+Evaluation/MaxReturn                    -94.3946
+Evaluation/MinReturn                    -97.7181
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.66177
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37981
+GaussianMLPPolicy/KL                      4.13138e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -7.23464
+GaussianMLPPolicy/LossBefore             -7.23199
+GaussianMLPPolicy/dLoss                   0.00265837
+GaussianMLPValueFunction/LossAfter       14.9338
+GaussianMLPValueFunction/LossBefore      15.2613
+GaussianMLPValueFunction/dLoss            0.327527
+TotalEnvSteps                        139860
+-----------------------------------  ----------------
+2022-08-24 10:11:43 | [trpo_pendulum] epoch #70 | Saving snapshot...
+2022-08-24 10:11:43 | [trpo_pendulum] epoch #70 | Saved
+2022-08-24 10:11:43 | [trpo_pendulum] epoch #70 | Time 39.09 s
+2022-08-24 10:11:43 | [trpo_pendulum] epoch #70 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.12628
+Evaluation/AverageReturn                -93.7231
+Evaluation/Iteration                     70
+Evaluation/MaxReturn                    -92.9257
+Evaluation/MinReturn                    -94.5205
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.797405
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37917
+GaussianMLPPolicy/KL                      3.75995e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -6.75047
+GaussianMLPPolicy/LossBefore             -6.75005
+GaussianMLPPolicy/dLoss                   0.000423431
+GaussianMLPValueFunction/LossAfter       12.8454
+GaussianMLPValueFunction/LossBefore      13.1632
+GaussianMLPValueFunction/dLoss            0.317803
+TotalEnvSteps                        141858
+-----------------------------------  ----------------
+2022-08-24 10:11:44 | [trpo_pendulum] epoch #71 | Saving snapshot...
+2022-08-24 10:11:44 | [trpo_pendulum] epoch #71 | Saved
+2022-08-24 10:11:44 | [trpo_pendulum] epoch #71 | Time 39.63 s
+2022-08-24 10:11:44 | [trpo_pendulum] epoch #71 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.36307
+Evaluation/AverageReturn                -89.2331
+Evaluation/Iteration                     71
+Evaluation/MaxReturn                    -86.282
+Evaluation/MinReturn                    -92.1842
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.95106
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37859
+GaussianMLPPolicy/KL                      3.05654e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.74452
+GaussianMLPPolicy/LossBefore             -5.7444
+GaussianMLPPolicy/dLoss                   0.000119686
+GaussianMLPValueFunction/LossAfter       10.1135
+GaussianMLPValueFunction/LossBefore      10.3873
+GaussianMLPValueFunction/dLoss            0.273843
+TotalEnvSteps                        143856
+-----------------------------------  ----------------
+2022-08-24 10:11:44 | [trpo_pendulum] epoch #72 | Saving snapshot...
+2022-08-24 10:11:44 | [trpo_pendulum] epoch #72 | Saved
+2022-08-24 10:11:44 | [trpo_pendulum] epoch #72 | Time 40.18 s
+2022-08-24 10:11:44 | [trpo_pendulum] epoch #72 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.24426
+Evaluation/AverageReturn                -88.7723
+Evaluation/Iteration                     72
+Evaluation/MaxReturn                    -87.4408
+Evaluation/MinReturn                    -90.1037
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.33147
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37806
+GaussianMLPPolicy/KL                      2.38686e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.5917
+GaussianMLPPolicy/LossBefore             -5.59166
+GaussianMLPPolicy/dLoss                   3.86238e-05
+GaussianMLPValueFunction/LossAfter        9.59448
+GaussianMLPValueFunction/LossBefore       9.85954
+GaussianMLPValueFunction/dLoss            0.265059
+TotalEnvSteps                        145854
+-----------------------------------  ----------------
+2022-08-24 10:11:45 | [trpo_pendulum] epoch #73 | Saving snapshot...
+2022-08-24 10:11:45 | [trpo_pendulum] epoch #73 | Saved
+2022-08-24 10:11:45 | [trpo_pendulum] epoch #73 | Time 40.71 s
+2022-08-24 10:11:45 | [trpo_pendulum] epoch #73 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.67284
+Evaluation/AverageReturn                -89.19
+Evaluation/Iteration                     73
+Evaluation/MaxReturn                    -88.5271
+Evaluation/MinReturn                    -89.8528
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.662844
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37761
+GaussianMLPPolicy/KL                      2.80662e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.60738
+GaussianMLPPolicy/LossBefore             -5.60694
+GaussianMLPPolicy/dLoss                   0.000445843
+GaussianMLPValueFunction/LossAfter        9.55924
+GaussianMLPValueFunction/LossBefore       9.82376
+GaussianMLPValueFunction/dLoss            0.264516
+TotalEnvSteps                        147852
+-----------------------------------  ----------------
+2022-08-24 10:11:45 | [trpo_pendulum] epoch #74 | Saving snapshot...
+2022-08-24 10:11:45 | [trpo_pendulum] epoch #74 | Saved
+2022-08-24 10:11:45 | [trpo_pendulum] epoch #74 | Time 41.25 s
+2022-08-24 10:11:45 | [trpo_pendulum] epoch #74 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.32136
+Evaluation/AverageReturn                -88.8092
+Evaluation/Iteration                     74
+Evaluation/MaxReturn                    -88.4261
+Evaluation/MinReturn                    -89.1922
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.383047
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37722
+GaussianMLPPolicy/KL                      2.07479e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.32227
+GaussianMLPPolicy/LossBefore             -5.32234
+GaussianMLPPolicy/dLoss                  -6.48499e-05
+GaussianMLPValueFunction/LossAfter        9.01518
+GaussianMLPValueFunction/LossBefore       9.26375
+GaussianMLPValueFunction/dLoss            0.24857
+TotalEnvSteps                        149850
+-----------------------------------  ----------------
+2022-08-24 10:11:46 | [trpo_pendulum] epoch #75 | Saving snapshot...
+2022-08-24 10:11:46 | [trpo_pendulum] epoch #75 | Saved
+2022-08-24 10:11:46 | [trpo_pendulum] epoch #75 | Time 41.77 s
+2022-08-24 10:11:46 | [trpo_pendulum] epoch #75 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.48388
+Evaluation/AverageReturn                -95.8785
+Evaluation/Iteration                     75
+Evaluation/MaxReturn                    -88.2249
+Evaluation/MinReturn                   -103.532
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      7.65364
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37675
+GaussianMLPPolicy/KL                      9.91934e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -6.36467
+GaussianMLPPolicy/LossBefore             -6.36467
+GaussianMLPPolicy/dLoss                   7.15256e-06
+GaussianMLPValueFunction/LossAfter       11.867
+GaussianMLPValueFunction/LossBefore      12.1621
+GaussianMLPValueFunction/dLoss            0.295091
+TotalEnvSteps                        151848
+-----------------------------------  ----------------
+2022-08-24 10:11:47 | [trpo_pendulum] epoch #76 | Saving snapshot...
+2022-08-24 10:11:47 | [trpo_pendulum] epoch #76 | Saved
+2022-08-24 10:11:47 | [trpo_pendulum] epoch #76 | Time 42.32 s
+2022-08-24 10:11:47 | [trpo_pendulum] epoch #76 | EpochTime 0.55 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.16608
+Evaluation/AverageReturn                -91.5403
+Evaluation/Iteration                     76
+Evaluation/MaxReturn                    -89.5471
+Evaluation/MinReturn                    -93.5335
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.99322
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.3763
+GaussianMLPPolicy/KL                      2.55838e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.69499
+GaussianMLPPolicy/LossBefore             -5.69508
+GaussianMLPPolicy/dLoss                  -8.34465e-05
+GaussianMLPValueFunction/LossAfter        9.90623
+GaussianMLPValueFunction/LossBefore      10.1653
+GaussianMLPValueFunction/dLoss            0.259087
+TotalEnvSteps                        153846
+-----------------------------------  ----------------
+2022-08-24 10:11:47 | [trpo_pendulum] epoch #77 | Saving snapshot...
+2022-08-24 10:11:47 | [trpo_pendulum] epoch #77 | Saved
+2022-08-24 10:11:47 | [trpo_pendulum] epoch #77 | Time 42.87 s
+2022-08-24 10:11:47 | [trpo_pendulum] epoch #77 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -7.72272
+Evaluation/AverageReturn                -84.5687
+Evaluation/Iteration                     77
+Evaluation/MaxReturn                    -82.7978
+Evaluation/MinReturn                    -86.3396
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.7709
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37595
+GaussianMLPPolicy/KL                      8.34388e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.69555
+GaussianMLPPolicy/LossBefore             -4.69549
+GaussianMLPPolicy/dLoss                   6.53267e-05
+GaussianMLPValueFunction/LossAfter        7.94974
+GaussianMLPValueFunction/LossBefore       8.16075
+GaussianMLPValueFunction/dLoss            0.211009
+TotalEnvSteps                        155844
+-----------------------------------  ----------------
+2022-08-24 10:11:48 | [trpo_pendulum] epoch #78 | Saving snapshot...
+2022-08-24 10:11:48 | [trpo_pendulum] epoch #78 | Saved
+2022-08-24 10:11:48 | [trpo_pendulum] epoch #78 | Time 43.53 s
+2022-08-24 10:11:48 | [trpo_pendulum] epoch #78 | EpochTime 0.66 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn      -10.2741
+Evaluation/AverageReturn                -95.7662
+Evaluation/Iteration                     78
+Evaluation/MaxReturn                    -91.1908
+Evaluation/MinReturn                   -100.342
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      4.57537
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37552
+GaussianMLPPolicy/KL                      3.16245e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.99957
+GaussianMLPPolicy/LossBefore             -5.99927
+GaussianMLPPolicy/dLoss                   0.000301361
+GaussianMLPValueFunction/LossAfter       10.7026
+GaussianMLPValueFunction/LossBefore      10.9727
+GaussianMLPValueFunction/dLoss            0.27005
+TotalEnvSteps                        157842
+-----------------------------------  ----------------
+2022-08-24 10:11:48 | [trpo_pendulum] epoch #79 | Saving snapshot...
+2022-08-24 10:11:48 | [trpo_pendulum] epoch #79 | Saved
+2022-08-24 10:11:48 | [trpo_pendulum] epoch #79 | Time 44.08 s
+2022-08-24 10:11:48 | [trpo_pendulum] epoch #79 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.9676
+Evaluation/AverageReturn                -94.3297
+Evaluation/Iteration                     79
+Evaluation/MaxReturn                    -94.1009
+Evaluation/MinReturn                    -94.5585
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.228838
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37503
+GaussianMLPPolicy/KL                      7.78881e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.78414
+GaussianMLPPolicy/LossBefore             -5.78401
+GaussianMLPPolicy/dLoss                   0.000130177
+GaussianMLPValueFunction/LossAfter       10.2513
+GaussianMLPValueFunction/LossBefore      10.508
+GaussianMLPValueFunction/dLoss            0.256697
+TotalEnvSteps                        159840
+-----------------------------------  ----------------
+2022-08-24 10:11:49 | [trpo_pendulum] epoch #80 | Saving snapshot...
+2022-08-24 10:11:49 | [trpo_pendulum] epoch #80 | Saved
+2022-08-24 10:11:49 | [trpo_pendulum] epoch #80 | Time 44.61 s
+2022-08-24 10:11:49 | [trpo_pendulum] epoch #80 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn      -10.2244
+Evaluation/AverageReturn                -95.4821
+Evaluation/Iteration                     80
+Evaluation/MaxReturn                    -92.7634
+Evaluation/MinReturn                    -98.2007
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.71862
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37451
+GaussianMLPPolicy/KL                      2.72412e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.77191
+GaussianMLPPolicy/LossBefore             -5.77175
+GaussianMLPPolicy/dLoss                   0.000163555
+GaussianMLPValueFunction/LossAfter        9.91674
+GaussianMLPValueFunction/LossBefore      10.1773
+GaussianMLPValueFunction/dLoss            0.260566
+TotalEnvSteps                        161838
+-----------------------------------  ----------------
+2022-08-24 10:11:49 | [trpo_pendulum] epoch #81 | Saving snapshot...
+2022-08-24 10:11:49 | [trpo_pendulum] epoch #81 | Saved
+2022-08-24 10:11:49 | [trpo_pendulum] epoch #81 | Time 45.16 s
+2022-08-24 10:11:49 | [trpo_pendulum] epoch #81 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.87274
+Evaluation/AverageReturn                -95.2407
+Evaluation/Iteration                     81
+Evaluation/MaxReturn                    -90.1868
+Evaluation/MinReturn                   -100.295
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      5.05388
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37392
+GaussianMLPPolicy/KL                      1.11633e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -5.79886
+GaussianMLPPolicy/LossBefore             -5.79783
+GaussianMLPPolicy/dLoss                   0.00102377
+GaussianMLPValueFunction/LossAfter       10.4421
+GaussianMLPValueFunction/LossBefore      10.6977
+GaussianMLPValueFunction/dLoss            0.255547
+TotalEnvSteps                        163836
+-----------------------------------  ----------------
+2022-08-24 10:11:50 | [trpo_pendulum] epoch #82 | Saving snapshot...
+2022-08-24 10:11:50 | [trpo_pendulum] epoch #82 | Saved
+2022-08-24 10:11:50 | [trpo_pendulum] epoch #82 | Time 45.68 s
+2022-08-24 10:11:50 | [trpo_pendulum] epoch #82 | EpochTime 0.52 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -7.92026
+Evaluation/AverageReturn                -89.8764
+Evaluation/Iteration                     82
+Evaluation/MaxReturn                    -88.4053
+Evaluation/MinReturn                    -91.3476
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.47115
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37333
+GaussianMLPPolicy/KL                      6.11349e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.98604
+GaussianMLPPolicy/LossBefore             -4.986
+GaussianMLPPolicy/dLoss                   3.67165e-05
+GaussianMLPValueFunction/LossAfter        8.5736
+GaussianMLPValueFunction/LossBefore       8.79964
+GaussianMLPValueFunction/dLoss            0.226039
+TotalEnvSteps                        165834
+-----------------------------------  ----------------
+2022-08-24 10:11:50 | [trpo_pendulum] epoch #83 | Saving snapshot...
+2022-08-24 10:11:50 | [trpo_pendulum] epoch #83 | Saved
+2022-08-24 10:11:50 | [trpo_pendulum] epoch #83 | Time 46.23 s
+2022-08-24 10:11:50 | [trpo_pendulum] epoch #83 | EpochTime 0.55 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.16858
+Evaluation/AverageReturn                -91.9445
+Evaluation/Iteration                     83
+Evaluation/MaxReturn                    -91.3262
+Evaluation/MinReturn                    -92.5628
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.618314
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37276
+GaussianMLPPolicy/KL                      1.5955e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.97135
+GaussianMLPPolicy/LossBefore             -4.97132
+GaussianMLPPolicy/dLoss                   3.05176e-05
+GaussianMLPValueFunction/LossAfter        8.01139
+GaussianMLPValueFunction/LossBefore       8.23905
+GaussianMLPValueFunction/dLoss            0.227662
+TotalEnvSteps                        167832
+-----------------------------------  ----------------
+2022-08-24 10:11:51 | [trpo_pendulum] epoch #84 | Saving snapshot...
+2022-08-24 10:11:51 | [trpo_pendulum] epoch #84 | Saved
+2022-08-24 10:11:51 | [trpo_pendulum] epoch #84 | Time 46.78 s
+2022-08-24 10:11:51 | [trpo_pendulum] epoch #84 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.3271
+Evaluation/AverageReturn                -90.0667
+Evaluation/Iteration                     84
+Evaluation/MaxReturn                    -89.3758
+Evaluation/MinReturn                    -90.7576
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.690868
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37219
+GaussianMLPPolicy/KL                      3.42101e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.63067
+GaussianMLPPolicy/LossBefore             -4.6306
+GaussianMLPPolicy/dLoss                   7.53403e-05
+GaussianMLPValueFunction/LossAfter        7.81614
+GaussianMLPValueFunction/LossBefore       8.02073
+GaussianMLPValueFunction/dLoss            0.204587
+TotalEnvSteps                        169830
+-----------------------------------  ----------------
+2022-08-24 10:11:52 | [trpo_pendulum] epoch #85 | Saving snapshot...
+2022-08-24 10:11:52 | [trpo_pendulum] epoch #85 | Saved
+2022-08-24 10:11:52 | [trpo_pendulum] epoch #85 | Time 47.33 s
+2022-08-24 10:11:52 | [trpo_pendulum] epoch #85 | EpochTime 0.55 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.22518
+Evaluation/AverageReturn                -91.4642
+Evaluation/Iteration                     85
+Evaluation/MaxReturn                    -89.1487
+Evaluation/MinReturn                    -93.7797
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.31552
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37162
+GaussianMLPPolicy/KL                      5.71097e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.81358
+GaussianMLPPolicy/LossBefore             -4.81345
+GaussianMLPPolicy/dLoss                   0.000133514
+GaussianMLPValueFunction/LossAfter        7.97198
+GaussianMLPValueFunction/LossBefore       8.18209
+GaussianMLPValueFunction/dLoss            0.210111
+TotalEnvSteps                        171828
+-----------------------------------  ----------------
+2022-08-24 10:11:52 | [trpo_pendulum] epoch #86 | Saving snapshot...
+2022-08-24 10:11:52 | [trpo_pendulum] epoch #86 | Saved
+2022-08-24 10:11:52 | [trpo_pendulum] epoch #86 | Time 47.88 s
+2022-08-24 10:11:52 | [trpo_pendulum] epoch #86 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn      -10.9956
+Evaluation/AverageReturn                -91.4027
+Evaluation/Iteration                     86
+Evaluation/MaxReturn                    -87.7181
+Evaluation/MinReturn                    -95.0872
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      3.68454
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37104
+GaussianMLPPolicy/KL                      1.0384e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.44378
+GaussianMLPPolicy/LossBefore             -4.44356
+GaussianMLPPolicy/dLoss                   0.000213623
+GaussianMLPValueFunction/LossAfter        6.89367
+GaussianMLPValueFunction/LossBefore       7.08799
+GaussianMLPValueFunction/dLoss            0.194313
+TotalEnvSteps                        173826
+-----------------------------------  ----------------
+2022-08-24 10:11:53 | [trpo_pendulum] epoch #87 | Saving snapshot...
+2022-08-24 10:11:53 | [trpo_pendulum] epoch #87 | Saved
+2022-08-24 10:11:53 | [trpo_pendulum] epoch #87 | Time 48.42 s
+2022-08-24 10:11:53 | [trpo_pendulum] epoch #87 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.93754
+Evaluation/AverageReturn                -89.4319
+Evaluation/Iteration                     87
+Evaluation/MaxReturn                    -85.832
+Evaluation/MinReturn                    -93.0319
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      3.59996
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.37049
+GaussianMLPPolicy/KL                      3.12991e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.23162
+GaussianMLPPolicy/LossBefore             -4.23143
+GaussianMLPPolicy/dLoss                   0.000182152
+GaussianMLPValueFunction/LossAfter        6.65125
+GaussianMLPValueFunction/LossBefore       6.83273
+GaussianMLPValueFunction/dLoss            0.181475
+TotalEnvSteps                        175824
+-----------------------------------  ----------------
+2022-08-24 10:11:53 | [trpo_pendulum] epoch #88 | Saving snapshot...
+2022-08-24 10:11:53 | [trpo_pendulum] epoch #88 | Saved
+2022-08-24 10:11:53 | [trpo_pendulum] epoch #88 | Time 48.98 s
+2022-08-24 10:11:53 | [trpo_pendulum] epoch #88 | EpochTime 0.55 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn      -10.3914
+Evaluation/AverageReturn                -94.975
+Evaluation/Iteration                     88
+Evaluation/MaxReturn                    -93.8192
+Evaluation/MinReturn                    -96.1309
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.15587
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36989
+GaussianMLPPolicy/KL                      2.12368e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.91953
+GaussianMLPPolicy/LossBefore             -4.91921
+GaussianMLPPolicy/dLoss                   0.000315666
+GaussianMLPValueFunction/LossAfter        8.36827
+GaussianMLPValueFunction/LossBefore       8.5743
+GaussianMLPValueFunction/dLoss            0.20603
+TotalEnvSteps                        177822
+-----------------------------------  ----------------
+2022-08-24 10:11:54 | [trpo_pendulum] epoch #89 | Saving snapshot...
+2022-08-24 10:11:54 | [trpo_pendulum] epoch #89 | Saved
+2022-08-24 10:11:54 | [trpo_pendulum] epoch #89 | Time 49.53 s
+2022-08-24 10:11:54 | [trpo_pendulum] epoch #89 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.47043
+Evaluation/AverageReturn                -88.0076
+Evaluation/Iteration                     89
+Evaluation/MaxReturn                    -85.1708
+Evaluation/MinReturn                    -90.8444
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.83682
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36934
+GaussianMLPPolicy/KL                      6.0506e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -3.85871
+GaussianMLPPolicy/LossBefore             -3.8585
+GaussianMLPPolicy/dLoss                   0.000205517
+GaussianMLPValueFunction/LossAfter        5.83493
+GaussianMLPValueFunction/LossBefore       6.00424
+GaussianMLPValueFunction/dLoss            0.169311
+TotalEnvSteps                        179820
+-----------------------------------  ----------------
+2022-08-24 10:11:54 | [trpo_pendulum] epoch #90 | Saving snapshot...
+2022-08-24 10:11:54 | [trpo_pendulum] epoch #90 | Saved
+2022-08-24 10:11:54 | [trpo_pendulum] epoch #90 | Time 50.06 s
+2022-08-24 10:11:54 | [trpo_pendulum] epoch #90 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.93612
+Evaluation/AverageReturn                -91.6633
+Evaluation/Iteration                     90
+Evaluation/MaxReturn                    -85.1593
+Evaluation/MinReturn                    -98.1673
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      6.50397
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36877
+GaussianMLPPolicy/KL                      1.87171e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.33644
+GaussianMLPPolicy/LossBefore             -4.33562
+GaussianMLPPolicy/dLoss                   0.000822067
+GaussianMLPValueFunction/LossAfter        6.87299
+GaussianMLPValueFunction/LossBefore       7.05758
+GaussianMLPValueFunction/dLoss            0.184598
+TotalEnvSteps                        181818
+-----------------------------------  ----------------
+2022-08-24 10:11:55 | [trpo_pendulum] epoch #91 | Saving snapshot...
+2022-08-24 10:11:55 | [trpo_pendulum] epoch #91 | Saved
+2022-08-24 10:11:55 | [trpo_pendulum] epoch #91 | Time 50.60 s
+2022-08-24 10:11:55 | [trpo_pendulum] epoch #91 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.09209
+Evaluation/AverageReturn                -85.1575
+Evaluation/Iteration                     91
+Evaluation/MaxReturn                    -83.1608
+Evaluation/MinReturn                    -87.1543
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      1.9968
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36823
+GaussianMLPPolicy/KL                      2.7422e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -3.40868
+GaussianMLPPolicy/LossBefore             -3.40817
+GaussianMLPPolicy/dLoss                   0.000519037
+GaussianMLPValueFunction/LossAfter        5.46422
+GaussianMLPValueFunction/LossBefore       5.60639
+GaussianMLPValueFunction/dLoss            0.14216
+TotalEnvSteps                        183816
+-----------------------------------  ----------------
+2022-08-24 10:11:55 | [trpo_pendulum] epoch #92 | Saving snapshot...
+2022-08-24 10:11:55 | [trpo_pendulum] epoch #92 | Saved
+2022-08-24 10:11:55 | [trpo_pendulum] epoch #92 | Time 51.13 s
+2022-08-24 10:11:55 | [trpo_pendulum] epoch #92 | EpochTime 0.53 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn      -10.2315
+Evaluation/AverageReturn                -92.5023
+Evaluation/Iteration                     92
+Evaluation/MaxReturn                    -89.2592
+Evaluation/MinReturn                    -95.7453
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      3.24305
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36768
+GaussianMLPPolicy/KL                      4.03996e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.04809
+GaussianMLPPolicy/LossBefore             -4.0483
+GaussianMLPPolicy/dLoss                  -0.000208378
+GaussianMLPValueFunction/LossAfter        6.35292
+GaussianMLPValueFunction/LossBefore       6.51804
+GaussianMLPValueFunction/dLoss            0.165117
+TotalEnvSteps                        185814
+-----------------------------------  ----------------
+2022-08-24 10:11:56 | [trpo_pendulum] epoch #93 | Saving snapshot...
+2022-08-24 10:11:56 | [trpo_pendulum] epoch #93 | Saved
+2022-08-24 10:11:56 | [trpo_pendulum] epoch #93 | Time 51.69 s
+2022-08-24 10:11:56 | [trpo_pendulum] epoch #93 | EpochTime 0.56 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.5534
+Evaluation/AverageReturn                -90.8004
+Evaluation/Iteration                     93
+Evaluation/MaxReturn                    -83.6257
+Evaluation/MinReturn                    -97.9752
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      7.17479
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36712
+GaussianMLPPolicy/KL                      3.88368e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.01633
+GaussianMLPPolicy/LossBefore             -4.01624
+GaussianMLPPolicy/dLoss                   9.58443e-05
+GaussianMLPValueFunction/LossAfter        6.37768
+GaussianMLPValueFunction/LossBefore       6.54116
+GaussianMLPValueFunction/dLoss            0.163481
+TotalEnvSteps                        187812
+-----------------------------------  ----------------
+2022-08-24 10:11:56 | [trpo_pendulum] epoch #94 | Saving snapshot...
+2022-08-24 10:11:56 | [trpo_pendulum] epoch #94 | Saved
+2022-08-24 10:11:56 | [trpo_pendulum] epoch #94 | Time 52.24 s
+2022-08-24 10:11:56 | [trpo_pendulum] epoch #94 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -8.96721
+Evaluation/AverageReturn                -93.9106
+Evaluation/Iteration                     94
+Evaluation/MaxReturn                    -91.1666
+Evaluation/MinReturn                    -96.6545
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      2.74398
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36652
+GaussianMLPPolicy/KL                      1.58884e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.46227
+GaussianMLPPolicy/LossBefore             -4.46113
+GaussianMLPPolicy/dLoss                   0.00113249
+GaussianMLPValueFunction/LossAfter        7.47106
+GaussianMLPValueFunction/LossBefore       7.64361
+GaussianMLPValueFunction/dLoss            0.172549
+TotalEnvSteps                        189810
+-----------------------------------  ----------------
+2022-08-24 10:11:57 | [trpo_pendulum] epoch #95 | Saving snapshot...
+2022-08-24 10:11:57 | [trpo_pendulum] epoch #95 | Saved
+2022-08-24 10:11:57 | [trpo_pendulum] epoch #95 | Time 52.79 s
+2022-08-24 10:11:57 | [trpo_pendulum] epoch #95 | EpochTime 0.55 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.19942
+Evaluation/AverageReturn                -88.8322
+Evaluation/Iteration                     95
+Evaluation/MaxReturn                    -88.5682
+Evaluation/MinReturn                    -89.0962
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.263977
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36595
+GaussianMLPPolicy/KL                      1.51249e-05
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -3.51587
+GaussianMLPPolicy/LossBefore             -3.51573
+GaussianMLPPolicy/dLoss                   0.000136852
+GaussianMLPValueFunction/LossAfter        5.39023
+GaussianMLPValueFunction/LossBefore       5.5277
+GaussianMLPValueFunction/dLoss            0.13747
+TotalEnvSteps                        191808
+-----------------------------------  ----------------
+2022-08-24 10:11:58 | [trpo_pendulum] epoch #96 | Saving snapshot...
+2022-08-24 10:11:58 | [trpo_pendulum] epoch #96 | Saved
+2022-08-24 10:11:58 | [trpo_pendulum] epoch #96 | Time 53.33 s
+2022-08-24 10:11:58 | [trpo_pendulum] epoch #96 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.3983
+Evaluation/AverageReturn                -95.0771
+Evaluation/Iteration                     96
+Evaluation/MaxReturn                    -88.3055
+Evaluation/MinReturn                   -101.849
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      6.77163
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36535
+GaussianMLPPolicy/KL                      3.92652e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -4.32786
+GaussianMLPPolicy/LossBefore             -4.32784
+GaussianMLPPolicy/dLoss                   2.57492e-05
+GaussianMLPValueFunction/LossAfter        6.96648
+GaussianMLPValueFunction/LossBefore       7.13299
+GaussianMLPValueFunction/dLoss            0.166506
+TotalEnvSteps                        193806
+-----------------------------------  ----------------
+2022-08-24 10:11:58 | [trpo_pendulum] epoch #97 | Saving snapshot...
+2022-08-24 10:11:58 | [trpo_pendulum] epoch #97 | Saved
+2022-08-24 10:11:58 | [trpo_pendulum] epoch #97 | Time 53.88 s
+2022-08-24 10:11:58 | [trpo_pendulum] epoch #97 | EpochTime 0.55 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.20991
+Evaluation/AverageReturn                -88.2665
+Evaluation/Iteration                     97
+Evaluation/MaxReturn                    -88.2608
+Evaluation/MinReturn                    -88.2723
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.0057589
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36473
+GaussianMLPPolicy/KL                      3.98643e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -3.27793
+GaussianMLPPolicy/LossBefore             -3.27776
+GaussianMLPPolicy/dLoss                   0.000172377
+GaussianMLPValueFunction/LossAfter        5.44413
+GaussianMLPValueFunction/LossBefore       5.56863
+GaussianMLPValueFunction/dLoss            0.124508
+TotalEnvSteps                        195804
+-----------------------------------  ----------------
+2022-08-24 10:11:59 | [trpo_pendulum] epoch #98 | Saving snapshot...
+2022-08-24 10:11:59 | [trpo_pendulum] epoch #98 | Saved
+2022-08-24 10:11:59 | [trpo_pendulum] epoch #98 | Time 54.43 s
+2022-08-24 10:11:59 | [trpo_pendulum] epoch #98 | EpochTime 0.54 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -7.86985
+Evaluation/AverageReturn                -91.7511
+Evaluation/Iteration                     98
+Evaluation/MaxReturn                    -91.1144
+Evaluation/MinReturn                    -92.3877
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.63664
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.36411
+GaussianMLPPolicy/KL                      1.89308e-06
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -3.70632
+GaussianMLPPolicy/LossBefore             -3.70611
+GaussianMLPPolicy/dLoss                   0.000214815
+GaussianMLPValueFunction/LossAfter        5.90301
+GaussianMLPValueFunction/LossBefore       6.04721
+GaussianMLPValueFunction/dLoss            0.144201
+TotalEnvSteps                        197802
+-----------------------------------  ----------------
+2022-08-24 10:11:59 | [trpo_pendulum] epoch #99 | Saving snapshot...
+2022-08-24 10:11:59 | [trpo_pendulum] epoch #99 | Saved
+2022-08-24 10:11:59 | [trpo_pendulum] epoch #99 | Time 55.06 s
+2022-08-24 10:11:59 | [trpo_pendulum] epoch #99 | EpochTime 0.62 s
+-----------------------------------  ----------------
+Evaluation/AverageDiscountedReturn       -9.02019
+Evaluation/AverageReturn                -90.4562
+Evaluation/Iteration                     99
+Evaluation/MaxReturn                    -90.2055
+Evaluation/MinReturn                    -90.7068
+Evaluation/NumEpisodes                    2
+Evaluation/StdReturn                      0.250653
+Evaluation/TerminationRate                0
+GaussianMLPPolicy/Entropy                 1.3635
+GaussianMLPPolicy/KL                      8.67079e-07
+GaussianMLPPolicy/KLBefore                0
+GaussianMLPPolicy/LossAfter              -3.30601
+GaussianMLPPolicy/LossBefore             -3.30592
+GaussianMLPPolicy/dLoss                   8.36849e-05
+GaussianMLPValueFunction/LossAfter        5.09577
+GaussianMLPValueFunction/LossBefore       5.22193
+GaussianMLPValueFunction/dLoss            0.126166
+TotalEnvSteps                        199800
+-----------------------------------  ----------------
