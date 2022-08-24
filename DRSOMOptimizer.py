@@ -67,24 +67,38 @@ class DRSOMOptimizer(Optimizer):
     def compute_alpha(self, m, f_constraint, itr):
         params = []
         grads = []
+        # params_values = []
         for group in self.param_groups:
             for p in group['params']:
                 if p.grad is not None:
                     params.append(p)
                     grads.append(p.grad.reshape(-1))
-        flat_loss_grads = torch.cat(grads)
+                    # params_values.append(p.data.reshape(-1))
+        g = torch.cat(grads)
 
-        g = flat_loss_grads.clone().detach()
 
-        print(torch.isnan(g).sum())
+        # flat_params_values = torch.cat(params_values)
+        # print('flat params value is:')
+        # print(flat_params_values)
+        # print('-------------------------------------')
 
+        # for group in self.param_groups:
+        #     for p in group['params']:
+        #         if p.grad is not None:
+        #             if p.grad.grad_fn is not None:
+        #                 p.grad.detach_()
+        #             else:
+        #                 p.grad.requires_grad_(False)
+        #             p.grad.zero_()
+        
         f_Ax = _build_hessian_vector_product(f_constraint, params,
                                              self._hvp_reg_coeff)
 
-        tmp = torch.zeros_like(m)
-        if torch.equal(tmp, m):
-            per = 1e-8
-            m = m + per * torch.ones_like(m)
+        with torch.no_grad():
+            tmp = torch.zeros_like(m)
+            if torch.equal(tmp, m):
+                per = 1e-8
+                m = m + per * torch.ones_like(m)
 
         Fg = f_Ax(g)
         Fm = f_Ax(m)
@@ -135,12 +149,18 @@ class DRSOMOptimizer(Optimizer):
         eigen, _ = torch.eig(G)
         var = eigen.min()
         if var <= 0:
+            print('Find a indefinite G')
             G = G - (var - 1e-8) * torch.eye(4)
         print('eigen of G is:')
         print(eigen)
         print('-----------------------------')
 
         inverse = torch.pinverse(G)
+
+        print('inverse of G is:')
+        print(inverse)
+        print('----------------------------')
+
         x = inverse @ c
         print("x is:")
         print(x)
@@ -154,7 +174,7 @@ class DRSOMOptimizer(Optimizer):
 
 
         if torch.isnan(alpha).sum():
-            print('nan step size!')
+            print('find nan step size!')
             alpha = torch.ones(4)
 
         print('alpha is:')
@@ -169,4 +189,4 @@ class DRSOMOptimizer(Optimizer):
         # coff = 1. / (G[0][0] * G[1][1] - G[0][1] * G[1][0])
         # inverse = coff * torch.tensor([[G[1][1], (-1) * G[0][1]], [(-1) * G[1][0], G[0][0]]], requires_grad=False)
 
-        return alpha, g, Fg, Fm
+        return alpha, g, Fg, Fm, params

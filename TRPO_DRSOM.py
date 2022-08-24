@@ -91,8 +91,6 @@ class TRPO_DRSOM(RLAlgorithm):
         self._train(obs_flat, actions_flat, rewards_flat, returns_flat,
                     advs_flat, valids, itr)
 
-        print(itr)
-
         # self._old_policy.load_state_dict(self.policy.state_dict())
 
         undiscounted_returns = log_performance(itr,
@@ -131,23 +129,44 @@ class TRPO_DRSOM(RLAlgorithm):
         loss = self.get_gradients(obs, actions, advs)
         loss.backward()
 
-        old = self._old_policy_m.get_param_value_new()
-        now = self.policy.get_param_value_new()
+        old = self._old_policy_m.get_param_value_new().detach()
+        now = self.policy.get_param_value_new().detach()
 
-        with torch.no_grad():
-            m_vector = now - old
-
-        alpha, g, Fg, Fm = self._policy_optimizer.compute_alpha(m=m_vector,
-                                                       f_constraint=lambda: self._compute_kl_constraint(obs), itr=itr)
-
-        print("alpha is:")
-        print(alpha)
+        print('old policy para is')
+        print(old)
         print('----------------------------------')
 
-        params_new = now + alpha[0] * g + alpha[1] * m_vector + alpha[2] * Fg + alpha[3] * Fm
+
+        print('params now is:')
+        print(now)
+        print('----------------------------------')
+
+        m = now - old
+
+        print('m is:')
+        print(m)
+        print('----------------------------------')
+
+        alpha, g, Fg, Fm, params = self._policy_optimizer.compute_alpha(m=m,
+                                                       f_constraint=lambda: self._compute_kl_constraint(obs), itr=itr)
+
+        # param_shapes = [p.shape or torch.Size([1]) for p in params]
+        # g_step = unflatten_tensors(g, param_shapes)
+        # m_step = unflatten_tensors(m, param_shapes)
+        # Fg_step = unflatten_tensors(Fg, param_shapes)
+        # Fm_step = unflatten_tensors(Fm, param_shapes)
+
+        # for g_step_, m_step_, Fg_step_, Fm_step_, param_ in zip(g_step, m_step, Fg_step, Fm_step, params):
+        #     new_param_ = param_.data + alpha[0] * g_step_ + alpha[1] * m_step_ + alpha[2] * Fg_step_ + alpha[3] * Fm_step_
+        #     param_.data = new_param_.data
 
         self._old_policy_m.set_param_value_new(now)
 
+
+        params_new = now + alpha[0] * g + alpha[1] * m + alpha[2] * Fg + alpha[3] * Fm
+        print('params_new is:')
+        print(params_new)
+        print('----------------------------------')
         self.policy.set_param_value_new(params_new)
 
         return loss
