@@ -163,7 +163,8 @@ class TRPO_DRSOM(RLAlgorithm):
         self._old_policy_m.set_param_value_new(now)
 
 
-        params_new = now + alpha[0] * g + alpha[1] * m + alpha[2] * Fg + alpha[3] * Fm
+        # params_new = now + alpha[0] * g + alpha[1] * m + alpha[2] * Fg + alpha[3] * Fm
+        params_new = now + alpha[0] * g + alpha[1] * m # + alpha[2] * Fg + alpha[3] * Fm
         print('params_new is:')
         print(params_new)
         print('----------------------------------')

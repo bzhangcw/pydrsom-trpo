@@ -76,7 +76,6 @@ class DRSOMOptimizer(Optimizer):
                     # params_values.append(p.data.reshape(-1))
         g = torch.cat(grads)
 
-
         # flat_params_values = torch.cat(params_values)
         # print('flat params value is:')
         # print(flat_params_values)
@@ -90,7 +89,7 @@ class DRSOMOptimizer(Optimizer):
         #             else:
         #                 p.grad.requires_grad_(False)
         #             p.grad.zero_()
-        
+
         f_Ax = _build_hessian_vector_product(f_constraint, params,
                                              self._hvp_reg_coeff)
 
@@ -123,10 +122,11 @@ class DRSOMOptimizer(Optimizer):
         gm = torch.dot(g, m)
         gFg = torch.dot(g, Fg)
         gFm = torch.dot(g, Fm)
-        FFg = f_Ax(Fg)
-        FFm = f_Ax(Fm)
+        # FFg = f_Ax(Fg)
+        # FFm = f_Ax(Fm)
 
-        c = torch.tensor([gg, gm, gFg, gFm], requires_grad=False)
+        c = torch.tensor([gg, gm], requires_grad=False)
+        # c = torch.tensor([gg, gm, gFg, gFm], requires_grad=False)
         print('c is:')
         print(c)
         print('------------------------------')
@@ -135,11 +135,14 @@ class DRSOMOptimizer(Optimizer):
         m_ = torch.unsqueeze(m, dim=0)
         Fg_ = torch.unsqueeze(Fg, dim=0)
         Fm_ = torch.unsqueeze(Fm, dim=0)
-        FFg_ = torch.unsqueeze(FFg, dim=0)
-        FFm_ = torch.unsqueeze(FFm, dim=0)
+        # FFg_ = torch.unsqueeze(FFg, dim=0)
+        # FFm_ = torch.unsqueeze(FFm, dim=0)
 
-        left = torch.cat((g_, m_, Fg_, Fm_), axis=0)
-        right = torch.cat((Fg_.t(), Fm_.t(), FFg_.t(), FFm_.t()), axis=1)
+        left = torch.cat((g_, m_), axis=0)
+        right = torch.cat((Fg_.t(), Fm_.t()), axis=1)
+
+        # left = torch.cat((g_, m_, Fg_, Fm_), axis=0)
+        # right = torch.cat((Fg_.t(), Fm_.t(), FFg_.t(), FFm_.t()), axis=1)
 
         G = torch.matmul(left, right).detach()
         print('G is:')
@@ -150,7 +153,7 @@ class DRSOMOptimizer(Optimizer):
         var = eigen.min()
         if var <= 0:
             print('Find a indefinite G')
-            G = G - (var - 1e-8) * torch.eye(4)
+            G = G - (var - 1e-8) * torch.eye(2)
         print('eigen of G is:')
         print(eigen)
         print('-----------------------------')
@@ -171,7 +174,6 @@ class DRSOMOptimizer(Optimizer):
         print('----------------------------')
 
         alpha = np.sqrt(2 * self._max_constraint_value * (1. / (torch.dot(x, G @ x) + 1e-8))) * x
-
 
         if torch.isnan(alpha).sum():
             print('find nan step size!')
